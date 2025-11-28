@@ -35,26 +35,26 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Phone',
+      title: 'Telefon',
       value: '030 628 310',
       link: 'tel:030628310'
     },
     {
       icon: Mail,
-      title: 'Email',
+      title: 'E-pošta',
       value: 'egh@gmail.com',
       link: 'mailto:egh@gmail.com'
     },
     {
       icon: MapPin,
-      title: 'Location',
+      title: 'Lokacija',
       value: 'Groharjevo naselje 5, 4220 Škofja Loka',
       link: null
     },
     {
       icon: Clock,
-      title: 'Hours',
-      value: 'Mon-Fri: 7AM-6PM, 24/7 Emergency',
+      title: 'Delovni čas',
+      value: 'Pon-Pet: 7:00-18:00, Nujna pomoč 24/7',
       link: null
     }
   ];
@@ -63,9 +63,9 @@ export default function Contact() {
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-gray-900">Get In Touch</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-gray-900">Kontaktirajte nas</h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-            Ready to start your project? Contact us today for a free consultation and quote
+            Pripravljeni začeti vaš projekt? Kontaktirajte nas še danes za brezplačno posvetovanje in ponudbo za električne storitve v Kranju in okolici
           </p>
         </div>
 
@@ -98,15 +98,15 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-700 text-white p-6 sm:p-8 rounded-xl">
-              <h3 className="text-xl sm:text-2xl mb-3 sm:mb-4 text-white">Emergency Services</h3>
+              <h3 className="text-xl sm:text-2xl mb-3 sm:mb-4 text-white">Nujna pomoč</h3>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base text-slate-100">
-                Electrical emergencies can't wait. We offer 24/7 emergency service to ensure your safety and restore power quickly.
+                Električne nujne primere ne moremo odlagati. Ponujamo nujno pomoč 24/7 v Kranju in okolici, da zagotovimo vašo varnost in hitro obnovimo oskrbo z električno energijo.
               </p>
               <a
                 href="tel:030628310"
                 className="inline-block bg-white text-slate-900 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg hover:bg-slate-100 transition-colors text-sm sm:text-base"
               >
-                Call Now: 030 628 310
+                Pokličite zdaj: 030 628 310
               </a>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm sm:text-base text-gray-700 mb-2">
-                  Full Name *
+                  Ime in priimek *
                 </label>
                 <input
                   type="text"
@@ -126,14 +126,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-700"
-                  placeholder="John Doe"
+                  placeholder="Janez Novak"
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="email" className="block text-sm sm:text-base text-gray-700 mb-2">
-                    Email *
+                    E-pošta *
                   </label>
                   <input
                     type="email"
@@ -143,13 +143,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    placeholder="john@example.com"
+                    placeholder="janez@example.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm sm:text-base text-gray-700 mb-2">
-                    Phone *
+                    Telefon *
                   </label>
                   <input
                     type="tel"
@@ -159,14 +159,14 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    placeholder="(555) 123-4567"
+                    placeholder="030 123 456"
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm sm:text-base text-gray-700 mb-2">
-                  Service Needed *
+                  Potrebna storitev *
                 </label>
                 <select
                   id="service"
@@ -176,19 +176,19 @@ export default function Contact() {
                   required
                   className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-700"
                 >
-                  <option value="">Select a service</option>
-                  <option value="residential">Residential Electrical</option>
-                  <option value="commercial">Commercial Electrical</option>
-                  <option value="lighting">Lighting Installation</option>
-                  <option value="emergency">Emergency Repairs</option>
-                  <option value="inspection">Safety Inspection</option>
-                  <option value="panel">Panel Upgrade</option>
+                  <option value="">Izberite storitev</option>
+                  <option value="residential">Domače električne storitve</option>
+                  <option value="commercial">Poslovne električne storitve</option>
+                  <option value="lighting">Namestitev razsvetljave</option>
+                  <option value="emergency">Nujna popravila</option>
+                  <option value="inspection">Varnostni pregled</option>
+                  <option value="panel">Nadgradnja električne omarice</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm sm:text-base text-gray-700 mb-2">
-                  Message *
+                  Sporočilo *
                 </label>
                 <textarea
                   id="message"
@@ -198,7 +198,7 @@ export default function Contact() {
                   required
                   rows={4}
                   className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-700 resize-none"
-                  placeholder="Please describe your electrical needs..."
+                  placeholder="Prosimo, opišite vaše električne potrebe..."
                 />
               </div>
 
@@ -206,12 +206,12 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-slate-700 text-white py-3 sm:py-4 text-sm sm:text-base rounded-lg hover:bg-slate-600 transition-colors"
               >
-                {submitted ? 'Message Sent!' : 'Send Message'}
+                {submitted ? 'Sporočilo poslano!' : 'Pošlji sporočilo'}
               </button>
 
               {submitted && (
                 <p className="text-sm sm:text-base text-green-600 text-center">
-                  Thank you! We'll get back to you soon.
+                  Hvala! Kmalu vas bomo kontaktirali.
                 </p>
               )}
             </form>

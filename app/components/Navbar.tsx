@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Image src="/logo-black.png" alt="EGH Logo" width={120} height={40} className="h-8 sm:h-10 w-auto" priority />
+            <Image src="/logo-black.png" alt="EGH Električar v Kranju" width={120} height={40} className="h-8 sm:h-10 w-auto" priority />
           </div>
 
           {/* Contact Buttons */}
@@ -48,7 +48,7 @@ export default function Navbar() {
               className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2 border-2 border-slate-700 text-slate-700 rounded-lg hover:bg-slate-700 hover:text-white transition-colors text-sm sm:text-base"
             >
               <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">Email Us</span>
+              <span className="hidden sm:inline">Pošljite email</span>
             </a>
           </div>
         </div>

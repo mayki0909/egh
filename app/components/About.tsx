@@ -3,10 +3,10 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export default function About() {
   const stats = [
-    { icon: Users, value: '500+', label: 'Happy Clients' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
-    { icon: Clock, value: '24/7', label: 'Emergency Service' },
-    { icon: ThumbsUp, value: '100%', label: 'Satisfaction Rate' }
+    { icon: Users, value: '500+', label: 'Zadovoljnih strank' },
+    { icon: Award, value: '15+', label: 'Let izkušenj' },
+    { icon: Clock, value: '24/7', label: 'Nujna pomoč' },
+    { icon: ThumbsUp, value: '100%', label: 'Stopnja zadovoljstva' }
   ];
 
   return (
@@ -18,24 +18,24 @@ export default function About() {
             <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
-                alt="Electrician at work"
+                alt="Električar v Kranju pri delu"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-slate-700 p-4 sm:p-6 lg:p-8 rounded-xl shadow-xl hidden md:block">
-              <p className="text-2xl sm:text-3xl lg:text-4xl text-white">Licensed</p>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-200">& Insured</p>
+              <p className="text-2xl sm:text-3xl lg:text-4xl text-white">Licencirano</p>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-200">& Zavarovano</p>
             </div>
           </div>
 
           {/* Content Side */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900">About Us</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900">O nas</h2>
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-              With over 15 years of experience in the electrical industry, we pride ourselves on delivering top-quality electrical services to both residential and commercial clients. Our team of licensed and certified electricians is dedicated to ensuring your safety and satisfaction.
+              Z več kot 15 leti izkušenj v električni industriji ponosni smo, da nudimo najkakovostnejše električne storitve v Kranju in okolici za domače in poslovne stranke. Naša ekipa licenciranih in certificiranih električarjev je predana zagotavljanju vaše varnosti in zadovoljstva.
             </p>
             <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
-              We stay up-to-date with the latest electrical codes and technologies, ensuring that every project is completed to the highest standards. From small repairs to large installations, we handle every job with professionalism and expertise.
+              Sledimo najnovejšim električnim predpisom in tehnologijam, kar zagotavlja, da je vsak projekt v Kranju in okolici dokončan po najvišjih standardih. Od majhnih popravil do velikih instalacij, vsako delo opravimo profesionalno in strokovno.
             </p>
 
             {/* Stats Grid */}

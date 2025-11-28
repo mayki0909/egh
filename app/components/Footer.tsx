@@ -5,19 +5,19 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#services' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Domov', href: '#' },
+    { name: 'Storitve', href: '#services' },
+    { name: 'O nas', href: '#about' },
+    { name: 'Kontakt', href: '#contact' }
   ];
 
   const services = [
-    'Residential Electrical',
-    'Commercial Electrical',
-    'Lighting Installation',
-    'Emergency Repairs',
-    'Safety Inspections',
-    'Panel Upgrades'
+    'Domače električne storitve',
+    'Poslovne električne storitve',
+    'Namestitev razsvetljave',
+    'Nujna popravila',
+    'Varnostni pregledi',
+    'Nadgradnje električnih omaric'
   ];
 
   const socialLinks = [
@@ -34,10 +34,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-3 sm:mb-4">
-              <Image src="/logo-white.png" alt="EGH Logo" width={120} height={48} className="h-10 sm:h-12 w-auto" />
+              <Image src="/logo-white.png" alt="EGH Električar v Kranju" width={120} height={48} className="h-10 sm:h-12 w-auto" />
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">
-              Professional electrical services you can trust. Licensed, insured, and dedicated to excellence.
+              Strokovne električne storitve v Kranju in okolici, ki jim lahko zaupate. Licencirano, zavarovano in predano odličnosti.
             </p>
             <div className="flex gap-3 sm:gap-4">
               {socialLinks.map((social, index) => {
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Quick Links</h3>
+            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Hitre povezave</h3>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Our Services</h3>
+            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Naše storitve</h3>
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index} className="text-sm sm:text-base text-gray-400">
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Contact Us</h3>
+            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Kontakt</h3>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-400">
               <li>
                 <p>Groharjevo naselje 5</p>
@@ -104,7 +104,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-gray-200">
-                24/7 Emergency Service
+                Nujna pomoč 24/7
               </li>
             </ul>
           </div>
@@ -114,14 +114,14 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
             <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
-              © {currentYear} ElectricPro. All rights reserved.
+              © {currentYear} EGH - Električar v Kranju. Vse pravice pridržane.
             </p>
             <div className="flex gap-4 sm:gap-6">
               <a href="#" className="text-sm sm:text-base text-gray-400 hover:text-gray-200 transition-colors">
-                Privacy Policy
+                Pravilnik o zasebnosti
               </a>
               <a href="#" className="text-sm sm:text-base text-gray-400 hover:text-gray-200 transition-colors">
-                Terms of Service
+                Pogoji storitve
               </a>
             </div>
           </div>

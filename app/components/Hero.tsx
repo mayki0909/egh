@@ -9,24 +9,24 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
-          alt="Professional Electrician"
-          className="w-full h-full object-cover"
-        />
+          <ImageWithFallback
+            src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
+            alt="Električar v Kranju - strokovne električne storitve"
+            className="w-full h-full object-cover"
+          />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-700/85"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="flex justify-center mb-4 sm:mb-6">
-          <Image src="/logo-white.png" alt="EGH Logo" width={200} height={80} className="h-16 sm:h-20 md:h-24 w-auto" priority />
+          <Image src="/logo-white.png" alt="EGH Električar v Kranju" width={200} height={80} className="h-16 sm:h-20 md:h-24 w-auto" priority />
         </div>
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 text-white px-2">
-          Professional Electrical Services
+          Električar v Kranju in okolici
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-slate-100 max-w-3xl mx-auto px-2">
-          Licensed & Insured Electricians Providing Quality Service for Residential & Commercial Properties
+          Licencirani in zavarovani električarji za kakovostne električne storitve v Kranju, Škofji Loki in okolici. Hitra pomoč 24/7 za vaše domače in poslovne nepremičnine.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
           <a
