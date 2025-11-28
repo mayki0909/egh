@@ -8,6 +8,7 @@ export default function Footer() {
     { name: 'Domov', href: '#' },
     { name: 'Storitve', href: '#services' },
     { name: 'O nas', href: '#about' },
+    { name: 'Pogosta vprašanja', href: '#faq' },
     { name: 'Kontakt', href: '#contact' }
   ];
 
@@ -37,7 +38,7 @@ export default function Footer() {
               <Image src="/logo-white.png" alt="EGH Električar v Kranju" width={120} height={48} className="h-10 sm:h-12 w-auto" />
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">
-              Strokovne električne storitve v Kranju in okolici, ki jim lahko zaupate. Licencirano, zavarovano in predano odličnosti.
+              Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Strokovne električne storitve in elektroinštalacije, ki jim lahko zaupate. Licencirano, zavarovano in predano odličnosti. Dežurna pomoč 24/7.
             </p>
             <div className="flex gap-3 sm:gap-4">
               {socialLinks.map((social, index) => {

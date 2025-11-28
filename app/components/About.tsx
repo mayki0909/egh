@@ -30,12 +30,15 @@ export default function About() {
 
           {/* Content Side */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900">O nas</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-900">Električar v Kranju, Škofji Loki in okolici</h2>
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-              Z več kot 15 leti izkušenj v električni industriji ponosni smo, da nudimo najkakovostnejše električne storitve v Kranju in okolici za domače in poslovne stranke. Naša ekipa licenciranih in certificiranih električarjev je predana zagotavljanju vaše varnosti in zadovoljstva.
+              Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici Osrednje Slovenije. Z več kot 15 leti izkušenj v električni industriji ponosni smo, da nudimo najkakovostnejše električne storitve za domače in poslovne stranke. Naša ekipa licenciranih in certificiranih električarjev je predana zagotavljanju vaše varnosti in zadovoljstva.
+            </p>
+            <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
+              Sledimo najnovejšim električnim predpisom in tehnologijam, kar zagotavlja, da je vsak projekt v Kranju, Škofji Loki in okolici dokončan po najvišjih standardih. Od menjave vtičnic in stikal, montaže razsvetljave, priklopa aparatov, do celostnih prenov električnih napeljav - vsako delo opravimo profesionalno in strokovno.
             </p>
             <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
-              Sledimo najnovejšim električnim predpisom in tehnologijam, kar zagotavlja, da je vsak projekt v Kranju in okolici dokončan po najvišjih standardih. Od majhnih popravil do velikih instalacij, vsako delo opravimo profesionalno in strokovno.
+              Nudimo tako enostavnejša električna dela na domu kot tudi kompleksnejša elektroinštalacijska dela v poslovnih objektih. Naša storitev obsega menjavo vtičnic, montažo varovalk, priklop aparatov, pametne inštalacije, montažo sončnih elektrarn in dežurno pomoč 24/7.
             </p>
 
             {/* Stats Grid */}

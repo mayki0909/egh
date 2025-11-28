@@ -5,32 +5,32 @@ export default function Services() {
     {
       icon: Home,
       title: 'Domače električne storitve',
-      description: 'Kompletne električne storitve za domače nepremičnine v Kranju in okolici. Vključuje instalacije, popravila in nadgradnje za vašo varnost in udobje.'
+      description: 'Kompletne električne storitve za domače nepremičnine v Kranju, Škofji Loki in okolici. Menjava vtičnic in stikal v bloku, novogradnji ali samostojni hiši. Priklop aparatov, montaža bele tehnike, elektroinštalacije za talno gretje. Vse delo opravimo varno, profesionalno in trajno.'
     },
     {
       icon: Building2,
       title: 'Poslovne električne storitve',
-      description: 'Strokovne električne rešitve za podjetja, pisarne in poslovne nepremičnine v Kranju z minimalnimi izpadli časi.'
+      description: 'Strokovne električne rešitve za podjetja, pisarne, proizvodne hale in poslovne nepremičnine v Kranju, Škofji Loki in okolici. Jako-točne in šibko-točne instalacije, razsvetljava za pisarne, priklopi industrijske opreme, montaža sončnih elektrarn. Minimalni izpadli časi.'
     },
     {
       icon: Lightbulb,
       title: 'Namestitev razsvetljave',
-      description: 'Strokovno načrtovanje in namestitev razsvetljave za notranje in zunanje prostore v Kranju in okolici za izboljšanje atmosfere in učinkovitosti.'
+      description: 'Strokovno načrtovanje in montaža vseh vrst svetil v Kranju in okolici: stenske, stropne, lestenci, kot vgradne ali novodobne LED linijske svetil. Notranja in zunanja razsvetljava za izboljšanje atmosfere in energetske učinkovitosti.'
     },
     {
       icon: Zap,
-      title: 'Nujna popravila',
-      description: 'Nujna električna popravila 24/7 v Kranju in okolici. Hitro reševanje nujnih električnih težav in obnovitev oskrbe z električno energijo.'
+      title: 'Nujna popravila in dežurna pomoč',
+      description: 'Dežurni električar 24/7 v Kranju, Škofji Loki in okolici. Nujna električna popravila tudi ponoči. Hitro reševanje nujnih električnih težav, izpadov električne energije in obnovitev oskrbe. Reagiranje takoj, ne glede na čas.'
     },
     {
       icon: ShieldCheck,
-      title: 'Varnostni pregledi',
-      description: 'Temeljiti varnostni pregledi električnih naprav v Kranju in okolici, da vaša nepremičnina izpolnjuje vse zahteve in standarde.'
+      title: 'Varnostni pregledi in elektro meritve',
+      description: 'Temeljiti varnostni pregledi električnih naprav in napeljav v Kranju in okolici. Elektro meritve, preverjanje izpolnjevanja električnih predpisov in standardov. Zagotavljanje varnosti vaše nepremičnine.'
     },
     {
       icon: Wrench,
       title: 'Nadgradnje električnih omaric',
-      description: 'Nadgradnje in zamenjave električnih omaric v Kranju za varno in učinkovito obvladovanje sodobnih zahtev po električni energiji.'
+      description: 'Menjava starih električnih omaric s klasičnimi varovalkami z modernejšo omarico in novimi varovalkami v Kranju in okolici. Enostavnejše upravljanje, varno in učinkovito obvladovanje sodobnih zahtev po električni energiji.'
     }
   ];
 
@@ -38,9 +38,9 @@ export default function Services() {
     <section id="services" className="py-12 sm:py-16 lg:py-20 bg-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-gray-900">Naše storitve</h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-            Obsežne električne storitve v Kranju in okolici, prilagojene vašim domačim in poslovnim potrebam
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-gray-900">Električne storitve v Kranju, Škofji Loki in okolici</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Obsežne elektroinštalacijske storitve za domače in poslovne nepremičnine. Menjava vtičnic, montaža razsvetljave, priklop aparatov, nadgradnje električnih omaric in dežurna pomoč 24/7.
           </p>
         </div>
 

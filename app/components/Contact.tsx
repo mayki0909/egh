@@ -98,15 +98,18 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-700 text-white p-6 sm:p-8 rounded-xl">
-              <h3 className="text-xl sm:text-2xl mb-3 sm:mb-4 text-white">Nujna pomoč</h3>
+              <h3 className="text-xl sm:text-2xl mb-3 sm:mb-4 text-white">Dežurni električar v Kranju in okolici</h3>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base text-slate-100">
-                Električne nujne primere ne moremo odlagati. Ponujamo nujno pomoč 24/7 v Kranju in okolici, da zagotovimo vašo varnost in hitro obnovimo oskrbo z električno energijo.
+                Dežurni električar pravimo tistemu, ki nudi svoja dela tudi izven klasičnega delovnega časa. V kolikor imate težave z električnimi inštalacijami, napravami ali varovalkami v Kranju, Škofji Loki in okolici, nas lahko pokličete tudi ponoči. Obrazložite svoje težave dežurnemu električarju preko telefona, kjer vam bo svetoval kakšen je nadaljnji postopek. V primeru visoke nujnosti, pa vam bo pomoč nudil tudi na domu.
+              </p>
+              <p className="mb-4 sm:mb-6 text-sm sm:text-base text-slate-100">
+                Ob težavah z električnimi inštalacijami v proizvodni, kjer obratovanje poteka 24 ur na dan, bo dežurni električar izvedel obisk na lokaciji v Kranju in okolici.
               </p>
               <a
                 href="tel:030628310"
-                className="inline-block bg-white text-slate-900 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg hover:bg-slate-100 transition-colors text-sm sm:text-base"
+                className="inline-block bg-white text-slate-900 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg hover:bg-slate-100 transition-colors text-sm sm:text-base font-semibold"
               >
-                Pokličite zdaj: 030 628 310
+                Pokličite dežurnega električarja: 030 628 310
               </a>
             </div>
           </div>

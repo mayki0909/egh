@@ -25,8 +25,11 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 text-white px-2">
           Električar v Kranju in okolici
         </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-slate-100 max-w-3xl mx-auto px-2">
-          Licencirani in zavarovani električarji za kakovostne električne storitve v Kranju, Škofji Loki in okolici. Hitra pomoč 24/7 za vaše domače in poslovne nepremičnine.
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 text-slate-100 max-w-3xl mx-auto px-2">
+          Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Licencirani in zavarovani električarji za kakovostne elektroinštalacije. Menjava vtičnic, montaža razsvetljave, priklop aparatov, nadgradnje električnih omaric.
+        </p>
+        <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-slate-200 max-w-2xl mx-auto px-2">
+          Dežurni električar 24/7 za nujno pomoč. Hitra reakcija tudi ponoči za reševanje električnih težav in obnovitev oskrbe z električno energijo.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
           <a
