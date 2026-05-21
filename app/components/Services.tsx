@@ -1,65 +1,81 @@
-import { Zap, Home, Building2, Lightbulb, ShieldCheck, Wrench } from 'lucide-react';
+import FigmaAsset from './FigmaAsset';
+import { containerClass, figmaAssets } from '../lib/figma-assets';
+
+const services = [
+  {
+    icon: figmaAssets.iconLightning,
+    title: 'Napeljava Električnih Instalacij',
+    description:
+      'Vgradnja električnih vodov, kablov in priprava napeljav za lokalne domove in podjetja.',
+  },
+  {
+    icon: figmaAssets.iconCircuitry,
+    title: 'Diagnostika in Odpravljanje Napake',
+    description:
+      'Hitra diagnostika in učinkovito odpravljanje električnih okvar na območju Škofje Loke, Kranja in Ljubljane.',
+  },
+  {
+    icon: figmaAssets.iconHammer,
+    title: 'Vzdrževanje Električnih Sistemov',
+    description:
+      'Redno vzdrževanje električnih sistemov za lokalne prebivalce in podjetja. Zamenjava dotrajanih komponent in pregled skladnosti z lokalnimi regulativami.',
+  },
+  {
+    icon: figmaAssets.iconPlugCharging,
+    title: 'Montaze in Priklopi Električnih Naprav',
+    description:
+      'Profesionalna namestitev gospodinjskih naprav, osvetlitvenih sistemov in varnostnih sistemov v Škofji Loki, Kranju in Ljubljani.',
+  },
+];
+
+function ServiceIcon({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative w-16 h-16 shrink-0">
+      <div className="absolute inset-0 rounded-lg bg-[rgba(87,196,201,0.06)] border border-[#d9d9d9]" />
+      <FigmaAsset src={src} alt={alt} width={32} height={32} className="absolute left-4 top-4" />
+    </div>
+  );
+}
 
 export default function Services() {
-  const services = [
-    {
-      icon: Home,
-      title: 'Domače električne storitve',
-      description: 'Kompletne električne storitve za domače nepremičnine v Kranju, Škofji Loki in okolici. Menjava vtičnic in stikal v bloku, novogradnji ali samostojni hiši. Priklop aparatov, montaža bele tehnike, elektroinštalacije za talno gretje. Vse delo opravimo varno, profesionalno in trajno.'
-    },
-    {
-      icon: Building2,
-      title: 'Poslovne električne storitve',
-      description: 'Strokovne električne rešitve za podjetja, pisarne, proizvodne hale in poslovne nepremičnine v Kranju, Škofji Loki in okolici. Jako-točne in šibko-točne instalacije, razsvetljava za pisarne, priklopi industrijske opreme, montaža sončnih elektrarn. Minimalni izpadli časi.'
-    },
-    {
-      icon: Lightbulb,
-      title: 'Namestitev razsvetljave',
-      description: 'Strokovno načrtovanje in montaža vseh vrst svetil v Kranju in okolici: stenske, stropne, lestenci, kot vgradne ali novodobne LED linijske svetil. Notranja in zunanja razsvetljava za izboljšanje atmosfere in energetske učinkovitosti.'
-    },
-    {
-      icon: Zap,
-      title: 'Nujna popravila in dežurna pomoč',
-      description: 'Dežurni električar 24/7 v Kranju, Škofji Loki in okolici. Nujna električna popravila tudi ponoči. Hitro reševanje nujnih električnih težav, izpadov električne energije in obnovitev oskrbe. Reagiranje takoj, ne glede na čas.'
-    },
-    {
-      icon: ShieldCheck,
-      title: 'Varnostni pregledi in elektro meritve',
-      description: 'Temeljiti varnostni pregledi električnih naprav in napeljav v Kranju in okolici. Elektro meritve, preverjanje izpolnjevanja električnih predpisov in standardov. Zagotavljanje varnosti vaše nepremičnine.'
-    },
-    {
-      icon: Wrench,
-      title: 'Nadgradnje električnih omaric',
-      description: 'Menjava starih električnih omaric s klasičnimi varovalkami z modernejšo omarico in novimi varovalkami v Kranju in okolici. Enostavnejše upravljanje, varno in učinkovito obvladovanje sodobnih zahtev po električni energiji.'
-    }
-  ];
-
   return (
-    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-gray-900">Električne storitve v Kranju, Škofji Loki in okolici</h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Obsežne elektroinštalacijske storitve za domače in poslovne nepremičnine. Menjava vtičnic, montaža razsvetljave, priklop aparatov, nadgradnje električnih omaric in dežurna pomoč 24/7.
+    <section id="services" className="bg-bg-section py-16 md:py-20">
+      <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
+        <div className="flex flex-col gap-4 max-w-[608px]">
+          <p className="font-label text-accent text-base uppercase leading-7">
+            Vrhunske Električne Storitve
           </p>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight">
+            Zaupajte Strokovnjakom za{' '}
+            <span className="text-accent">Vaše Električne Potrebe</span>!
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
+        <div className="grid grid-cols-1 xl:grid-cols-[726px_1fr] gap-10 xl:gap-[172px] items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
+            {services.map((service) => (
               <div
-                key={index}
-                className="bg-slate-50 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200"
+                key={service.title}
+                className="bg-bg-card border border-accent rounded-lg p-6 flex flex-col gap-6 min-h-[280px] md:min-h-[352px]"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-slate-200 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-slate-700" strokeWidth={2} />
+                <ServiceIcon src={service.icon} alt={service.title} />
+                <div className="flex flex-col gap-3">
+                  <h3 className="font-label text-xl md:text-2xl text-white">{service.title}</h3>
+                  <p className="text-[#e0e0e0] text-base leading-7">{service.description}</p>
                 </div>
-                <h3 className="text-xl sm:text-2xl mb-2 sm:mb-3 text-gray-900">{service.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
+
+          <div className="relative w-full aspect-[478/744] max-h-[744px] rounded-2xl overflow-hidden">
+            <FigmaAsset
+              src={figmaAssets.servicesImage}
+              alt="Električne instalacije"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1280px) 100vw, 478px"
+            />
+          </div>
         </div>
       </div>
     </section>

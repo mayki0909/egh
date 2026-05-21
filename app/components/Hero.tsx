@@ -1,60 +1,42 @@
-'use client';
-
-import { Phone, Mail } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import Image from 'next/image';
+import FigmaAsset from './FigmaAsset';
+import { containerClass, figmaAssets } from '../lib/figma-assets';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
-            alt="Električar v Kranju - strokovne električne storitve"
-            className="w-full h-full object-cover"
-          />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-700/85"></div>
-      </div>
+    <section className="bg-bg-section pt-[72px] md:pt-[87px]">
+      <div className={`${containerClass} py-12 md:py-16 lg:py-20`}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col gap-6 md:gap-8">
+            <h1 className="font-heading font-medium text-4xl sm:text-5xl md:text-6xl xl:text-[80px] xl:leading-[88px] tracking-[-1px] text-white">
+              Vaš Partner za Zanesljive in Učinkovite{' '}
+              <span className="text-accent">Rešitve!</span>
+            </h1>
+            <p className="text-[#e3e3e3] text-base md:text-lg lg:text-xl leading-8 max-w-[594px]">
+              Iskanje zanesljivega električarja v Sloveniji je lahko zahtevna naloga, vendar smo mi
+              tukaj, da vam olajšamo ta proces.
+            </p>
+            <a
+              href="mailto:info@egh.si"
+              className="inline-flex w-fit items-center justify-center bg-accent text-text-dark-btn font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+            >
+              Začnimo z vašim Projektom
+            </a>
+          </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <div className="flex justify-center mb-4 sm:mb-6">
-          <Image src="/logo-white.png" alt="EGH Električar v Kranju" width={200} height={80} className="h-16 sm:h-20 md:h-24 w-auto" priority />
-        </div>
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 text-white px-2">
-          Električar v Kranju in okolici
-        </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 text-slate-100 max-w-3xl mx-auto px-2">
-          Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Licencirani in zavarovani električarji za kakovostne elektroinštalacije. Menjava vtičnic, montaža razsvetljave, priklop aparatov, nadgradnje električnih omaric.
-        </p>
-        <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-slate-200 max-w-2xl mx-auto px-2">
-          Dežurni električar 24/7 za nujno pomoč. Hitra reakcija tudi ponoči za reševanje električnih težav in obnovitev oskrbe z električno energijo.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-          <a
-            href="tel:030628310"
-            className="bg-slate-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg hover:bg-slate-600 transition-colors flex items-center justify-center gap-2"
-          >
-            <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span className="text-sm sm:text-base">030 628 310</span>
-          </a>
-          <a
-            href="mailto:egh@gmail.com"
-            className="bg-transparent border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg hover:bg-white hover:text-slate-900 transition-colors flex items-center justify-center gap-2"
-          >
-            <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span className="text-sm sm:text-base">egh@gmail.com</span>
-          </a>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="animate-bounce">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+          <div className="relative w-full max-w-[550px] lg:max-w-none lg:ml-auto">
+            <div
+              className="relative aspect-[550/678] w-full overflow-hidden rounded-tl-[40px] md:rounded-tl-[82px] shadow-[0px_4.403px_36.652px_11.006px_rgba(87,196,201,0.08)]"
+            >
+              <FigmaAsset
+                src={figmaAssets.heroImage}
+                alt="Električar pri delu"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 550px"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

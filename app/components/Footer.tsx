@@ -1,132 +1,107 @@
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import Image from 'next/image';
+import Link from 'next/link';
+import FigmaAsset from './FigmaAsset';
+import { containerClass, figmaAssets } from '../lib/figma-assets';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { name: 'Domov', href: '#' },
-    { name: 'Storitve', href: '#services' },
-    { name: 'O nas', href: '#about' },
-    { name: 'Pogosta vprašanja', href: '#faq' },
-    { name: 'Kontakt', href: '#contact' }
-  ];
-
-  const services = [
-    'Domače električne storitve',
-    'Poslovne električne storitve',
-    'Namestitev razsvetljave',
-    'Nujna popravila',
-    'Varnostni pregledi',
-    'Nadgradnje električnih omaric'
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
-  ];
-
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
-          {/* Company Info */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <div className="mb-3 sm:mb-4">
-              <Image src="/logo-white.png" alt="EGH Električar v Kranju" width={120} height={48} className="h-10 sm:h-12 w-auto" />
-            </div>
-            <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">
-              Električar v Kranju, Škofji Loki, Radovljici, Kamniku in širši okolici. Strokovne električne storitve in elektroinštalacije, ki jim lahko zaupate. Licencirano, zavarovano in predano odličnosti. Dežurna pomoč 24/7.
+    <footer className="bg-bg-section relative overflow-hidden">
+      <div className={`${containerClass} py-16 md:py-20 flex flex-col gap-16 md:gap-40`}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-[184px]">
+          <div className="flex flex-col gap-[18px]">
+            <FigmaAsset
+              src={figmaAssets.logo}
+              alt="Elektro Gal Harbaš"
+              width={90}
+              height={40}
+              className="h-10 w-auto"
+            />
+            <p className="text-white text-lg md:text-xl font-medium opacity-80">
+              Elektro Gal Harbaš, s.p.
             </p>
-            <div className="flex gap-3 sm:gap-4">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
-                  >
-                    <Icon className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />
-                  </a>
-                );
-              })}
-            </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Hitre povezave</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-sm sm:text-base text-gray-400 hover:text-gray-200 transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Naše storitve</h3>
-            <ul className="space-y-2">
-              {services.map((service, index) => (
-                <li key={index} className="text-sm sm:text-base text-gray-400">
-                  {service}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 text-white">Kontakt</h3>
-            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-400">
+          <div className="flex flex-col gap-6">
+            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+              NAV
+            </p>
+            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
               <li>
-                <p>Groharjevo naselje 5</p>
-                <p>4220 Škofja Loka</p>
+                <Link href="#about" className="hover:opacity-100 transition-opacity">
+                  O nas
+                </Link>
               </li>
               <li>
-                <a href="tel:030628310" className="hover:text-gray-200 transition-colors">
+                <Link href="#services" className="hover:opacity-100 transition-opacity">
+                  Storitve
+                </Link>
+              </li>
+              <li>
+                <Link href="#projects" className="hover:opacity-100 transition-opacity">
+                  Projeckti
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+              Contact us
+            </p>
+            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
+              <li>
+                <a href="mailto:info@egh.si" className="hover:opacity-100 transition-opacity">
+                  info@egh.si
+                </a>
+              </li>
+              <li>
+                <a href="tel:030628310" className="hover:opacity-100 transition-opacity">
                   030 628 310
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+              Info
+            </p>
+            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
               <li>
-                <a href="mailto:egh@gmail.com" className="hover:text-gray-200 transition-colors">
-                  egh@gmail.com
+                <a href="#" className="hover:opacity-100 transition-opacity">
+                  Terms & conditions
                 </a>
               </li>
-              <li className="text-gray-200">
-                Nujna pomoč 24/7
+              <li>
+                <a href="#" className="hover:opacity-100 transition-opacity">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:opacity-100 transition-opacity">
+                  Cookies
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-6 sm:pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-            <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
-              © {currentYear} EGH - Električar v Kranju. Vse pravice pridržane.
-            </p>
-            <div className="flex gap-4 sm:gap-6">
-              <a href="#" className="text-sm sm:text-base text-gray-400 hover:text-gray-200 transition-colors">
-                Pravilnik o zasebnosti
-              </a>
-              <a href="#" className="text-sm sm:text-base text-gray-400 hover:text-gray-200 transition-colors">
-                Pogoji storitve
-              </a>
-            </div>
-          </div>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[10px] text-white opacity-40 font-medium">
+          <p>© {currentYear} — Copyright</p>
+          <a href="#" className="hover:opacity-100 transition-opacity">
+            Privacy
+          </a>
         </div>
+      </div>
+
+      <div className="absolute right-0 bottom-0 w-[min(40%,572px)] h-[300px] pointer-events-none overflow-hidden hidden lg:block">
+        <FigmaAsset
+          src={figmaAssets.footerLightning}
+          alt=""
+          fill
+          className="object-contain object-right-bottom opacity-60"
+        />
       </div>
     </footer>
   );

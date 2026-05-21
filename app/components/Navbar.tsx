@@ -1,58 +1,101 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Phone, Mail } from 'lucide-react';
-import Image from 'next/image';
+import { useState } from 'react';
+import Link from 'next/link';
+import FigmaAsset from './FigmaAsset';
+import { Menu, X } from 'lucide-react';
+import { containerClass, figmaAssets } from '../lib/figma-assets';
+
+const navLinks = [
+  { label: 'Storitve', href: '#services' },
+  { label: 'O nas', href: '#about' },
+  { label: 'Projekti', href: '#projects' },
+];
 
 export default function Navbar() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show navbar when scrolled past hero (approximately screen height)
-      if (window.scrollY > window.innerHeight - 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-slate-50 shadow-md transition-transform duration-300 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Image src="/logo-black.png" alt="EGH Električar v Kranju" width={120} height={40} className="h-8 sm:h-10 w-auto" priority />
-          </div>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-bg-section">
+      <div className={`${containerClass} flex h-[72px] md:h-[87px] items-center justify-between gap-4`}>
+        <Link href="#" className="shrink-0">
+          <FigmaAsset
+            src={figmaAssets.logo}
+            alt="Elektro Gal Harbaš"
+            width={90}
+            height={40}
+            className="h-8 w-auto md:h-10"
+            priority
+          />
+        </Link>
 
-          {/* Contact Buttons */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            <a
-              href="tel:030628310"
-              className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-slate-700 text-white rounded-lg hover:bg-slate-600 transition-colors text-sm sm:text-base"
+        <nav className="hidden lg:flex items-center gap-12">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[14px] font-medium uppercase tracking-wide text-[#e3e3e3] hover:text-accent transition-colors"
             >
-              <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">030 628 310</span>
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden sm:flex items-center gap-3 md:gap-6 shrink-0">
+          <a
+            href="mailto:info@egh.si"
+            className="bg-accent text-text-dark-btn font-bold text-sm md:text-base px-4 md:px-5 py-3 md:py-4 rounded-[5px] hover:opacity-90 transition-opacity whitespace-nowrap"
+          >
+            info@egh.si
+          </a>
+          <a
+            href="tel:030628310"
+            className="bg-accent text-text-dark-btn font-bold text-sm md:text-base px-4 md:px-5 py-3 md:py-4 rounded-[5px] hover:opacity-90 transition-opacity whitespace-nowrap"
+          >
+            030 628 310
+          </a>
+        </div>
+
+        <button
+          type="button"
+          className="lg:hidden p-2 text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Zapri meni' : 'Odpri meni'}
+        >
+          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      </div>
+
+      {menuOpen && (
+        <div className="lg:hidden border-t border-white/10 bg-bg-section px-4 pb-6">
+          <nav className="flex flex-col gap-4 py-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-[14px] font-medium uppercase tracking-wide text-[#e3e3e3]"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="flex flex-col gap-3 sm:hidden">
+            <a
+              href="mailto:info@egh.si"
+              className="bg-accent text-text-dark-btn font-bold text-center text-sm px-4 py-3 rounded-[5px]"
+            >
+              info@egh.si
             </a>
             <a
-              href="mailto:egh@gmail.com"
-              className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2 border-2 border-slate-700 text-slate-700 rounded-lg hover:bg-slate-700 hover:text-white transition-colors text-sm sm:text-base"
+              href="tel:030628310"
+              className="bg-accent text-text-dark-btn font-bold text-center text-sm px-4 py-3 rounded-[5px]"
             >
-              <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">Pošljite email</span>
+              030 628 310
             </a>
           </div>
         </div>
-      </div>
-    </nav>
+      )}
+    </header>
   );
 }
