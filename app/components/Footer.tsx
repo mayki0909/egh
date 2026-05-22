@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import FigmaAsset from './FigmaAsset';
 import { containerClass, figmaAssets } from '../lib/figma-assets';
+import { services } from '../lib/services';
+
+const footerServices = services.slice(0, 6);
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-bg-section relative overflow-hidden">
       <div className={`${containerClass} py-16 md:py-20 flex flex-col gap-16 md:gap-40`}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-[184px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
           <div className="flex flex-col gap-[18px]">
             <FigmaAsset
               src={figmaAssets.logo}
@@ -24,7 +27,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6">
             <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
-              NAV
+              Navigacija
             </p>
             <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
               <li>
@@ -39,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#projects" className="hover:opacity-100 transition-opacity">
-                  Projeckti
+                  Projekti
                 </Link>
               </li>
             </ul>
@@ -47,7 +50,25 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6">
             <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
-              Contact us
+              Storitve
+            </p>
+            <ul className="flex flex-col gap-3 text-base text-white opacity-80 font-medium">
+              {footerServices.map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`#${service.slug}`}
+                    className="hover:opacity-100 transition-opacity"
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+              Kontakt
             </p>
             <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
               <li>
@@ -62,36 +83,11 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          <div className="flex flex-col gap-6">
-            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
-              Info
-            </p>
-            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
-              <li>
-                <a href="#" className="hover:opacity-100 transition-opacity">
-                  Terms & conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-100 transition-opacity">
-                  Privacy policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-100 transition-opacity">
-                  Cookies
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[10px] text-white opacity-40 font-medium">
-          <p>© {currentYear} — Copyright</p>
-          <a href="#" className="hover:opacity-100 transition-opacity">
-            Privacy
-          </a>
+          <p>© {currentYear} Elektro Gal Harbaš, s.p.</p>
+          <p>Groharjevo naselje 5, 4220 Škofja Loka</p>
         </div>
       </div>
 

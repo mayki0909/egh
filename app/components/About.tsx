@@ -18,11 +18,12 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-lg leading-8 text-white">
-                Pri Elektro Harbi smo predani temu, da vam zagotovimo vrhunske električarske
+                Pri Elektro Gal Harbaš smo predani temu, da vam zagotovimo vrhunske električarske
                 storitve na lokalnem območju{' '}
                 <span className="font-bold text-accent">Škofje Loke, Kranja in Ljubljane</span>.
-                S strokovnostjo in zanesljivostjo smo postali priljubljena izbira za električne
-                rešitve v domovih, podjetjih ter industrijskih objektih.
+                S strokovnostjo in zanesljivostjo izvajamo hišne in industrijske instalacije,
+                zamrzovalne komore, meritve ter vzdrževanje v domovih, podjetjih in industrijskih
+                objektih.
               </p>
               <a
                 href="mailto:info@egh.si"

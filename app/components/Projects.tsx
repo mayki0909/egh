@@ -1,6 +1,24 @@
+import FigmaAsset from './FigmaAsset';
 import { containerClass } from '../lib/figma-assets';
+import { galleryImages } from '../lib/gallery';
+
+function GalleryTile({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative rounded-lg overflow-hidden h-[280px] md:h-[424px] bg-bg-placeholder">
+      <FigmaAsset
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+      />
+    </div>
+  );
+}
 
 export default function Projects() {
+  const [featured, ...rest] = galleryImages;
+
   return (
     <section id="projects" className="bg-bg-page py-16 md:py-20 lg:py-24">
       <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
@@ -13,15 +31,19 @@ export default function Projects() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-1 md:grid-cols-[1.42fr_1fr] gap-6">
-            <div className="bg-bg-placeholder rounded-lg h-[280px] md:h-[424px]" />
-            <div className="bg-bg-placeholder rounded-lg h-[280px] md:h-[424px]" />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-bg-placeholder rounded-lg h-[280px] md:h-[424px]" />
-            <div className="bg-bg-placeholder rounded-lg h-[280px] md:h-[424px]" />
-            <div className="bg-bg-placeholder rounded-lg h-[280px] md:h-[424px]" />
-          </div>
+          {featured && (
+            <div className="grid grid-cols-1 md:grid-cols-[1.42fr_1fr] gap-6">
+              <GalleryTile src={featured.src} alt={featured.alt} />
+              {rest[0] && <GalleryTile src={rest[0].src} alt={rest[0].alt} />}
+            </div>
+          )}
+          {rest.length > 1 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {rest.slice(1).map((img) => (
+                <GalleryTile key={img.src} src={img.src} alt={img.alt} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

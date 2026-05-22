@@ -1,5 +1,5 @@
 import FigmaAsset from './FigmaAsset';
-import { containerClass, figmaAssets } from '../lib/figma-assets';
+import { containerClass } from '../lib/figma-assets';
 
 export default function Hero() {
   return (
@@ -12,8 +12,8 @@ export default function Hero() {
               <span className="text-accent">Rešitve!</span>
             </h1>
             <p className="text-[#e3e3e3] text-base md:text-lg lg:text-xl leading-8 max-w-[594px]">
-              Iskanje zanesljivega električarja v Sloveniji je lahko zahtevna naloga, vendar smo mi
-              tukaj, da vam olajšamo ta proces.
+              Industrijske in hišne instalacije, priklopi, meritve in vzdrževanje — izvajamo
+              celovite elektro storitve v Škofji Loki, Kranju in Ljubljani.
             </p>
             <a
               href="mailto:info@egh.si"
@@ -28,8 +28,8 @@ export default function Hero() {
               className="relative aspect-[550/678] w-full overflow-hidden rounded-tl-[40px] md:rounded-tl-[82px] shadow-[0px_4.403px_36.652px_11.006px_rgba(87,196,201,0.08)]"
             >
               <FigmaAsset
-                src={figmaAssets.heroImage}
-                alt="Električar pri delu"
+                src="/assets/Industrija1.jpeg"
+                alt="Industrijska elektro instalacija – Elektro Gal Harbaš Kranj"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 550px"
