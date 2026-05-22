@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg-page: #171719;
+  --bg-section: #121214;
+  --bg-card: #202024;
+  --bg-placeholder: #2c2c2c;
+  --accent: #57c4c9;
+  --text-primary: #ffffff;
+  --text-muted: #e3e3e3;
+  --text-muted-2: #dadada;
+  --text-muted-3: #e0e0e0;
+  --text-dark: #12141d;
+  --text-dark-btn: #1a1a1a;
+  --font-size: 16px;
+}
+
+@theme inline {
+  --color-bg-page: var(--bg-page);
+  --color-bg-section: var(--bg-section);
+  --color-bg-card: var(--bg-card);
+  --color-bg-placeholder: var(--bg-placeholder);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --color-text-muted-2: var(--text-muted-2);
+  --color-text-muted-3: var(--text-muted-3);
+  --color-text-dark: var(--text-dark);
+  --color-text-dark-btn: var(--text-dark-btn);
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-inter), "Inter", sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+}
+
+.font-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
