@@ -4,6 +4,7 @@ import Features from './components/Features';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import About from './components/About';
+import FAQ from './components/FAQ';
 import CtaBanner from './components/CtaBanner';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Projects />
         <About />
+        <FAQ />
         <CtaBanner />
       </main>
       <Footer />
