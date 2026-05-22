@@ -24,9 +24,9 @@ const siteUrl = "https://www.egh.si";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Elektro Gal Harbaš | Električar v Kranju, Škofja Loka in okolici",
+  title: "Električar v Kranju, Škofja Loka in okolici | Gal Harbaš",
   description:
-    "Elektro Gal Harbaš – industrijske in hišne elektroinštalacije, zamrzovalne komore, priklopi števcev, zasilna razsvetljava, meritve in poročila v Škofji Loki, Kranju in Ljubljani.",
+    "Gal Harbaš s.p. – industrijske in hišne elektroinštalacije, zamrzovalne komore, priklopi števcev, zasilna razsvetljava, meritve in poročila v Škofji Loki, Kranju in Ljubljani.",
   keywords: [
     "električar Kranj",
     "električar Škofja Loka",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Elektro Gal Harbaš | Električar v Kranju in okolici",
+    title: "Električar v Kranju in okolici | Gal Harbaš",
     description:
       "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani.",
     type: "website",
@@ -48,19 +48,19 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: "/assets/Industrija1.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Industrijske elektro instalacije – Elektro Gal Harbaš",
+        url: "/metadata.jpeg",
+        width: 895,
+        height: 370,
+        alt: "Elektro Ghal – Ni elektrike? Ni panike.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elektro Gal Harbaš | Električar v Kranju in okolici",
+    title: "Električar v Kranju, Škofja Loka in okolici | Gal Harbaš",
     description:
       "Vrhunske električarske storitve v Škofji Loki, Kranju in Ljubljani.",
-    images: ["/assets/Industrija1.jpeg"],
+    images: ["/metadata.jpeg"],
   },
 };
 
@@ -78,7 +78,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Electrician",
-    name: "Elektro Gal Harbaš, s.p.",
+    name: "Elektroinštalacije, Gal Harbaš s.p.",
     description:
       "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani",
     url: siteUrl,
@@ -104,7 +104,7 @@ export default function RootLayout({
           description: service.description,
           provider: {
             "@type": "Electrician",
-            name: "Elektro Gal Harbaš, s.p.",
+            name: "Elektroinštalacije, Gal Harbaš s.p.",
           },
           areaServed,
         },

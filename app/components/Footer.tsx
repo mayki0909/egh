@@ -4,6 +4,8 @@ import { containerClass, figmaAssets } from '../lib/figma-assets';
 import { services } from '../lib/services';
 
 const footerServices = services.slice(0, 6);
+const companyName = 'Elektroinštalacije, Gal Harbaš s.p.';
+const address = 'Groharjevo naselje 5, 4220 Škofja Loka';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,39 +13,37 @@ export default function Footer() {
   return (
     <footer className="bg-bg-section relative overflow-hidden">
       <div className={`${containerClass} py-16 md:py-20 flex flex-col gap-16 md:gap-40`}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+        <div className="flex flex-col gap-10 lg:grid lg:grid-cols-3 lg:gap-16">
           <div className="flex flex-col gap-[18px]">
             <FigmaAsset
               src={figmaAssets.logo}
-              alt="Elektro Gal Harbaš"
+              alt={companyName}
               width={90}
               height={40}
-              className="h-10 w-auto"
+              className="h-10 w-auto self-start"
             />
             <p className="text-white text-lg md:text-xl font-medium opacity-80">
-              Elektro Gal Harbaš, s.p.
+              {companyName}
+            </p>
+            <p className="text-white text-lg md:text-xl font-medium opacity-80">
+              {address}
             </p>
           </div>
 
           <div className="flex flex-col gap-6">
             <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
-              Navigacija
+              Kontakt
             </p>
             <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
               <li>
-                <Link href="#about" className="hover:opacity-100 transition-opacity">
-                  O nas
-                </Link>
+                <a href="mailto:info@egh.si" className="hover:opacity-100 transition-opacity">
+                  info@egh.si
+                </a>
               </li>
               <li>
-                <Link href="#services" className="hover:opacity-100 transition-opacity">
-                  Storitve
-                </Link>
-              </li>
-              <li>
-                <Link href="#projects" className="hover:opacity-100 transition-opacity">
-                  Projekti
-                </Link>
+                <a href="tel:030628310" className="hover:opacity-100 transition-opacity">
+                  030 628 310
+                </a>
               </li>
             </ul>
           </div>
@@ -65,29 +65,10 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          <div className="flex flex-col gap-6">
-            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
-              Kontakt
-            </p>
-            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
-              <li>
-                <a href="mailto:info@egh.si" className="hover:opacity-100 transition-opacity">
-                  info@egh.si
-                </a>
-              </li>
-              <li>
-                <a href="tel:030628310" className="hover:opacity-100 transition-opacity">
-                  030 628 310
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[10px] text-white opacity-40 font-medium">
-          <p>© {currentYear} Elektro Gal Harbaš, s.p.</p>
-          <p>Groharjevo naselje 5, 4220 Škofja Loka</p>
+        <div className="text-[10px] text-white opacity-40 font-medium">
+          <p>© {currentYear} {companyName}</p>
         </div>
       </div>
 

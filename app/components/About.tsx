@@ -29,7 +29,7 @@ export default function About() {
                 href="mailto:info@egh.si"
                 className="inline-flex w-fit items-center justify-center bg-accent text-text-dark-btn font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
               >
-                Začnimo z vašim Projektom
+                Začnimo z projektom
               </a>
             </div>
 

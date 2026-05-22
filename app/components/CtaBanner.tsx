@@ -23,14 +23,14 @@ export default function CtaBanner() {
             />
           </div>
 
-          <h2 className="relative font-heading font-bold text-3xl md:text-4xl lg:text-[56px] lg:leading-[64px] text-text-dark max-w-[492px]">
-            Want to talk to a marketing expert?
+          <h2 className="relative font-heading font-bold text-3xl md:text-4xl lg:text-[56px] lg:leading-[64px] text-text-dark max-w-[620px]">
+            Potrebujete električarske storitve?
           </h2>
           <a
             href="mailto:info@egh.si"
             className="relative inline-flex items-center justify-center bg-bg-section text-white font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
           >
-            Začnimo z vašim Projektom
+            Začnimo z vašim projektom
           </a>
         </div>
       </div>

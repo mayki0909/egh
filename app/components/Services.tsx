@@ -1,4 +1,5 @@
 import FigmaAsset from './FigmaAsset';
+import MobileScrollCarousel from './MobileScrollCarousel';
 import { containerClass } from '../lib/figma-assets';
 import { services } from '../lib/services';
 
@@ -8,17 +9,19 @@ function ServiceCard({
   description,
   image,
   alt,
+  withAnchorId = true,
 }: {
   slug: string;
   title: string;
   description: string;
   image?: string;
   alt: string;
+  withAnchorId?: boolean;
 }) {
   return (
     <article
-      id={slug}
-      className="bg-bg-card border border-accent rounded-lg overflow-hidden flex flex-col scroll-mt-28"
+      {...(withAnchorId ? { id: slug } : {})}
+      className="bg-bg-card border border-accent rounded-lg overflow-hidden flex flex-col scroll-mt-28 h-full"
     >
       <div className="relative w-full aspect-[4/3] bg-bg-placeholder">
         {image ? (
@@ -27,7 +30,7 @@ function ServiceCard({
             alt={alt}
             fill
             className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            sizes="(max-width: 768px) calc(100vw - 4rem), (max-width: 1280px) 50vw, 33vw"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center bg-[rgba(87,196,201,0.08)]">
@@ -45,8 +48,8 @@ function ServiceCard({
 
 export default function Services() {
   return (
-    <section id="services" className="bg-bg-section py-16 md:py-20">
-      <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
+    <section id="services" className="bg-bg-section py-10 md:py-20">
+      <div className={`${containerClass} flex flex-col gap-6 md:gap-14`}>
         <div className="flex flex-col gap-4 max-w-[871px]">
           <p className="font-label text-accent text-base uppercase leading-7">Kaj ponujamo</p>
           <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight">
@@ -59,7 +62,18 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+        <MobileScrollCarousel
+          ariaLabel="Seznam storitev"
+          slideClassName="w-[calc(100vw-4rem)]"
+          hintText="Podrsajte za več storitev"
+          chevronClassName="top-[calc((100vw-4rem)*3/8)] -translate-y-1/2"
+        >
+          {services.map((service) => (
+            <ServiceCard key={service.slug} {...service} withAnchorId={false} />
+          ))}
+        </MobileScrollCarousel>
+
+        <div className="hidden md:grid sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => (
             <ServiceCard key={service.slug} {...service} />
           ))}

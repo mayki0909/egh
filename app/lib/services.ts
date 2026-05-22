@@ -16,14 +16,6 @@ export const services: ServiceOffering[] = [
     alt: "Industrijske elektro instalacije v industrijskem objektu – Elektro Gal Harbaš",
   },
   {
-    slug: "izdelava-zamrzovalnih-komor",
-    title: "Izdelava zamrzovalnih komor",
-    description:
-      "Električna priprava in priklop zamrzovalnih komor za gostinstvo, trgovine in industrijo. Skladna z varnostnimi zahtevami in lokalnimi predpisi.",
-    image: "/assets/ZamrzovalnaKomora1.jpeg",
-    alt: "Električna instalacija zamrzovalne komore – Elektro Gal Harbaš",
-  },
-  {
     slug: "hisne-instalacije",
     title: "Hišne instalacije",
     description:
@@ -72,6 +64,14 @@ export const services: ServiceOffering[] = [
     alt: "Pregled zasilne razsvetljave v objektu – Elektro Gal Harbaš",
   },
   {
+    slug: "izdelava-zamrzovalnih-komor",
+    title: "Izdelava zamrzovalnih komor",
+    description:
+      "Električna priprava in priklop zamrzovalnih komor za gostinstvo, trgovine in industrijo. Skladna z varnostnimi zahtevami in lokalnimi predpisi.",
+    image: "/assets/ZamrzovalnaKomora1.jpeg",
+    alt: "Električna instalacija zamrzovalne komore – Elektro Gal Harbaš",
+  },
+  {
     slug: "priprava-za-ozemljitev-naprav",
     title: "Priprava za ozemljitev naprav",
     description:
@@ -84,14 +84,16 @@ export const services: ServiceOffering[] = [
     title: "Popravila strojev in električnih naprav",
     description:
       "Diagnostika in popravila industrijskih strojev ter električnih naprav. Hitro odpravljanje okvar v Škofji Loki, Kranju in Ljubljani.",
-    alt: "Popravila strojev in električnih naprav – Elektro Gal Harbaš",
+    image: "/assets/PopravilaStrojevInElektricnihNaprav.jpg",
+    alt: "Tehnik pri popravilu električnega razdelilnega panela – Elektro Gal Harbaš",
   },
   {
     slug: "izvajanje-elektro-meritev-in-priprava-porocil",
     title: "Izvajanje elektro meritev in priprava poročil",
     description:
       "Meritve upornosti izolacije, ozemljitve in drugih električnih parametrov. Priprava uradnih poročil za revizije in predaje objektov.",
-    alt: "Elektro meritve in priprava merilnih poročil – Elektro Gal Harbaš",
+    image: "/assets/ElektroMeritveInPorocila.jpg",
+    alt: "Električar pri merjenju napetosti v razdelilni omarici z multimetrom – Elektro Gal Harbaš",
   },
 ];
 
