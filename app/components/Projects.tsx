@@ -42,7 +42,7 @@ export default function Projects() {
       <div className={`${containerClass} flex flex-col gap-6 md:gap-14`}>
         <div className="flex flex-col gap-4 items-center text-center max-w-[871px] mx-auto">
           <p className="font-label text-accent text-base uppercase leading-7">Naši Projekti</p>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
             <span className="text-accent">Kvalitetna</span> Izvedba in{' '}
             <span className="text-accent">Zanesljiva</span> Storitev za Vaše Električne Naloge!
           </h2>

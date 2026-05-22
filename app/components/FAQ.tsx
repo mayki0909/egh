@@ -16,12 +16,12 @@ export default function FAQ() {
           </p>
           <h2
             id="faq-heading"
-            className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight"
+            className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight"
           >
             Električne storitve v{' '}
             <span className="text-accent">Kranju in okolici</span>
           </h2>
-          <p className="text-[#dadada] text-base md:text-lg leading-8">
+          <p className="text-text-muted-2 text-base md:text-lg leading-8">
             Odgovori na najpogostejša vprašanja o električnih storitvah, dežurni pomoči in
             elektroinštalacijah v Kranju, Škofji Loki in okolici.
           </p>
@@ -34,7 +34,7 @@ export default function FAQ() {
               className="group bg-bg-card border border-accent rounded-lg overflow-hidden open:bg-bg-section transition-colors"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-8 sm:py-6 [&::-webkit-details-marker]:hidden">
-                <span className="font-label text-base sm:text-lg text-white text-left leading-snug">
+                <span className="font-label text-base sm:text-lg text-text-primary text-left leading-snug">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -42,8 +42,8 @@ export default function FAQ() {
                   aria-hidden
                 />
               </summary>
-              <div className="border-t border-white/10 px-6 pb-5 sm:px-8 sm:pb-6">
-                <p className="text-[#dadada] text-base leading-7 pt-4">{faq.answer}</p>
+              <div className="border-t border-border-subtle px-6 pb-5 sm:px-8 sm:pb-6">
+                <p className="text-text-muted-2 text-base leading-7 pt-4">{faq.answer}</p>
               </div>
             </details>
           ))}

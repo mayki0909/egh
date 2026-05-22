@@ -31,12 +31,12 @@ export default function Features() {
           </p>
           <h2
             id="features-heading"
-            className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight"
+            className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight"
           >
             Vaš <span className="text-accent">električar v Kranju</span> in Škofji Loki za
             zanesljive elektro rešitve
           </h2>
-          <p className="text-[#dadada] text-base md:text-lg leading-8">
+          <p className="text-text-muted-2 text-base md:text-lg leading-8">
             Specializirani smo za industrijske in hišne elektroinštalacije, meritve, zasilno
             razsvetljavo ter vzdrževanje. Z lokalno prisotnostjo in strokovno izvedbo zagotavljamo
             varnost, kakovost in dolgoročno zadovoljstvo strank v Gorenjski regiji in na območju
@@ -54,8 +54,8 @@ export default function Features() {
                 src={iconByKey[feature.iconKey]}
                 alt={`${feature.title} – Elektro Gal Harbaš`}
               />
-              <h3 className="font-label text-xl md:text-2xl text-white">{feature.title}</h3>
-              <p className="text-[#dadada] text-base leading-7">{feature.description}</p>
+              <h3 className="font-label text-xl md:text-2xl text-text-primary">{feature.title}</h3>
+              <p className="text-text-muted-2 text-base leading-7">{feature.description}</p>
             </article>
           ))}
         </div>

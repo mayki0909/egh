@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./components/ThemeProvider";
 import { services, serviceKeywords } from "./lib/services";
+import { THEME_STORAGE_KEY } from "./lib/theme";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -112,8 +114,13 @@ export default function RootLayout({
     },
   };
 
+  const themeInitScript = `(function(){try{var t=localStorage.getItem("${THEME_STORAGE_KEY}");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.remove("dark");}catch(e){}})();`;
+
   return (
-    <html lang="sl">
+    <html lang="sl" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} ${geistMono.variable} antialiased`}
       >
@@ -121,7 +128,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

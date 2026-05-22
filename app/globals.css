@@ -1,19 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
+  --bg-page: #f4f4f6;
+  --bg-section: #ffffff;
+  --bg-card: #ffffff;
+  --bg-placeholder: #e8e8ec;
+  --accent: #57c4c9;
+  --text-primary: #12141d;
+  --text-muted: #52525b;
+  --text-muted-2: #6b6b72;
+  --text-muted-3: #5c5c64;
+  --text-dark: #12141d;
+  --text-dark-btn: #1a1a1a;
+  --border-subtle: rgba(18, 20, 29, 0.1);
+  --font-size: 16px;
+  color-scheme: light;
+}
+
+.dark {
   --bg-page: #171719;
   --bg-section: #121214;
   --bg-card: #202024;
   --bg-placeholder: #2c2c2c;
-  --accent: #57c4c9;
   --text-primary: #ffffff;
   --text-muted: #e3e3e3;
   --text-muted-2: #dadada;
   --text-muted-3: #e0e0e0;
-  --text-dark: #12141d;
-  --text-dark-btn: #1a1a1a;
-  --font-size: 16px;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -28,6 +45,7 @@
   --color-text-muted-3: var(--text-muted-3);
   --color-text-dark: var(--text-dark);
   --color-text-dark-btn: var(--text-dark-btn);
+  --color-border-subtle: var(--border-subtle);
   --font-sans: "Inter", sans-serif;
   --font-heading: "Space Grotesk", sans-serif;
   --font-mono: var(--font-geist-mono);
@@ -51,4 +69,12 @@ body {
 .font-label {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+}
+
+.logo-theme {
+  transition: filter 0.2s ease;
+}
+
+.dark .logo-theme {
+  filter: brightness(0) invert(1);
 }

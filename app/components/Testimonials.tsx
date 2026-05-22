@@ -55,7 +55,7 @@ export default function Testimonials() {
       <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
         <div className="flex flex-col gap-4 items-center text-center max-w-[871px] mx-auto">
           <p className="font-label text-accent text-base uppercase leading-7">Stranke</p>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
             Kaj menijo naše stranke
           </h2>
         </div>
@@ -67,7 +67,7 @@ export default function Testimonials() {
               key={index}
               className="bg-bg-card rounded-lg p-10 flex flex-col justify-between gap-20 min-h-[485px]"
             >
-              <p className="text-white text-xl leading-8 font-medium">{t.quote}</p>
+              <p className="text-text-primary text-xl leading-8 font-medium">{t.quote}</p>
               <div className="flex flex-col gap-2">
                 <FigmaAsset
                   src={figmaAssets.testimonialAvatar}
@@ -78,7 +78,7 @@ export default function Testimonials() {
                 />
                 <p className="text-lg">
                   <span className="font-bold text-accent">{t.name}</span>
-                  <span className="text-[#f4f4f4] font-medium"> • {t.role}</span>
+                  <span className="text-text-muted-2 font-medium"> • {t.role}</span>
                 </p>
                 <StarRating count={t.stars} />
               </div>
@@ -96,7 +96,7 @@ export default function Testimonials() {
               {testimonials.map((t, index) => (
                 <div key={index} className="w-full shrink-0 px-1">
                   <div className="bg-bg-card rounded-lg p-8 flex flex-col gap-12 min-h-[400px]">
-                    <p className="text-white text-lg leading-8 font-medium">{t.quote}</p>
+                    <p className="text-text-primary text-lg leading-8 font-medium">{t.quote}</p>
                     <div className="flex flex-col gap-2">
                       <FigmaAsset
                         src={figmaAssets.testimonialAvatar}
@@ -107,7 +107,7 @@ export default function Testimonials() {
                       />
                       <p className="text-base">
                         <span className="font-bold text-accent">{t.name}</span>
-                        <span className="text-[#f4f4f4] font-medium"> • {t.role}</span>
+                        <span className="text-text-muted-2 font-medium"> • {t.role}</span>
                       </p>
                       <StarRating count={t.stars} />
                     </div>

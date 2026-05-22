@@ -19,22 +19,22 @@ export default function Footer() {
               alt={companyName}
               width={90}
               height={40}
-              className="h-10 w-auto self-start"
+              className="logo-theme h-10 w-auto self-start"
             />
-            <p className="text-white text-lg md:text-xl font-medium opacity-80">
+            <p className="text-text-primary text-lg md:text-xl font-medium opacity-80">
               {companyName}
 
             </p>
-            <p className="text-white text-base md:text-lg font-medium opacity-80">
+            <p className="text-text-primary text-base md:text-lg font-medium opacity-80">
               Groharjevo naselje 5,<br />4220 Škofja Loka
             </p>
           </div>
 
           <div className="flex flex-col gap-6">
-            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+            <p className="text-text-primary text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
               Kontakt
             </p>
-            <ul className="flex flex-col gap-4 text-lg md:text-xl text-white opacity-80 font-medium">
+            <ul className="flex flex-col gap-4 text-lg md:text-xl text-text-primary opacity-80 font-medium">
               <li>
                 <a href="mailto:info@egh.si" className="hover:opacity-100 transition-opacity">
                   info@egh.si
@@ -49,10 +49,10 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-6">
-            <p className="text-white text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
+            <p className="text-text-primary text-sm uppercase tracking-[0.56px] opacity-40 font-medium">
               Storitve
             </p>
-            <ul className="flex flex-col gap-3 text-base text-white opacity-80 font-medium">
+            <ul className="flex flex-col gap-3 text-base text-text-primary opacity-80 font-medium">
               {footerServices.map((service) => (
                 <li key={service.slug}>
                   <Link
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-[10px] text-white opacity-40 font-medium">
+        <div className="text-[10px] text-text-primary opacity-40 font-medium">
           <p>© {currentYear} {companyName}</p>
         </div>
       </div>

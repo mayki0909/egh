@@ -7,11 +7,11 @@ export default function Hero() {
       <div className={`${containerClass} py-12 md:py-16 lg:py-20`}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="flex flex-col gap-6 md:gap-8">
-            <h1 className="font-heading font-medium text-4xl sm:text-5xl md:text-6xl xl:text-[80px] xl:leading-[88px] tracking-[-1px] text-white">
+            <h1 className="font-heading font-medium text-4xl sm:text-5xl md:text-6xl xl:text-[80px] xl:leading-[88px] tracking-[-1px] text-text-primary">
               <span className="text-accent">Električar</span> na Gorenjskem
 
             </h1>
-            <p className="text-[#e3e3e3] text-base md:text-lg lg:text-xl leading-8 max-w-[594px]">
+            <p className="text-text-muted text-base md:text-lg lg:text-xl leading-8 max-w-[594px]">
               Gal Harbaš s.p. izvaja industrijske in hišne elektroinštalacije, priklop električnih števcev,
               meritve, zasilno razsvetljavo in vzdrževanje za gospodinjstva in podjetja v Gorenjski
               regiji — Kranj, Škofja Loka in Ljubljana.

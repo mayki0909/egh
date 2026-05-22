@@ -107,7 +107,7 @@ export default function MobileScrollCarousel({
             <button
               type="button"
               onClick={goPrev}
-              className={`absolute left-1 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-bg-page/90 border border-white/20 text-accent shadow-md hover:bg-bg-page ${chevronClassName}`}
+              className={`absolute left-1 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-bg-page/90 border border-border-subtle text-accent shadow-md hover:bg-bg-page ${chevronClassName}`}
               aria-label="Prejšnji"
             >
               <ChevronLeft className="h-5 w-5" strokeWidth={2.5} />
@@ -115,7 +115,7 @@ export default function MobileScrollCarousel({
             <button
               type="button"
               onClick={goNext}
-              className={`absolute right-1 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-bg-page/90 border border-white/20 text-accent shadow-md hover:bg-bg-page ${chevronClassName}`}
+              className={`absolute right-1 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-bg-page/90 border border-border-subtle text-accent shadow-md hover:bg-bg-page ${chevronClassName}`}
               aria-label="Naslednji"
             >
               <ChevronRight className="h-5 w-5" strokeWidth={2.5} />
@@ -126,7 +126,7 @@ export default function MobileScrollCarousel({
 
       {canNavigate && (
         <div className="flex flex-col items-center gap-3 px-6">
-          <p className="text-sm text-white/70 text-center">{hintText}</p>
+          <p className="text-sm text-text-muted text-center">{hintText}</p>
 
           <div className="flex items-center gap-3 w-full max-w-xs justify-center">
             <span className="text-xs font-medium text-accent tabular-nums shrink-0">
@@ -149,7 +149,7 @@ export default function MobileScrollCarousel({
                   className={`h-2 rounded-full transition-all duration-200 ${
                     index === activeIndex
                       ? 'w-5 bg-accent'
-                      : 'w-2 bg-white/40 hover:bg-white/60'
+                      : 'w-2 bg-text-primary/25 hover:bg-text-primary/40'
                   }`}
                 />
               ))}

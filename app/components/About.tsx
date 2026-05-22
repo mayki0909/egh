@@ -12,12 +12,12 @@ export default function About() {
                 <p className="font-label text-accent text-base uppercase leading-7">
                   Vrhunske Električne Storitve
                 </p>
-                <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-white leading-tight">
+                <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
                   Zaupajte Strokovnjakom za{' '}
                   <span className="text-accent">Vaše Električne Potrebe</span>!
                 </h2>
               </div>
-              <p className="text-lg leading-8 text-white">
+              <p className="text-lg leading-8 text-text-primary">
                 Pri Elektro Gal Harbaš smo predani temu, da vam zagotovimo vrhunske električarske
                 storitve na lokalnem območju{' '}
                 <span className="font-bold text-accent">Škofje Loke, Kranja in Ljubljane</span>.

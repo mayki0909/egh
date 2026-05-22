@@ -28,7 +28,7 @@ export default function CtaBanner() {
           </h2>
           <a
             href="mailto:info@egh.si"
-            className="relative inline-flex items-center justify-center bg-bg-section text-white font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+            className="relative inline-flex items-center justify-center bg-bg-section text-text-primary font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
           >
             Začnimo z vašim projektom
           </a>
