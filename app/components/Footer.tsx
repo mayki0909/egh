@@ -5,7 +5,6 @@ import { services } from '../lib/services';
 
 const footerServices = services.slice(0, 6);
 const companyName = 'Elektroinštalacije, Gal Harbaš s.p.';
-const address = 'Groharjevo naselje 5, 4220 Škofja Loka';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,9 +23,10 @@ export default function Footer() {
             />
             <p className="text-white text-lg md:text-xl font-medium opacity-80">
               {companyName}
+
             </p>
-            <p className="text-white text-lg md:text-xl font-medium opacity-80">
-              {address}
+            <p className="text-white text-base md:text-lg font-medium opacity-80">
+              Groharjevo naselje 5,<br />4220 Škofja Loka
             </p>
           </div>
 
