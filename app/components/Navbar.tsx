@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Storitve', href: '#services' },
   { label: 'O nas', href: '#about' },
   { label: 'Projekti', href: '#projects' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'VPRAŠANJA', href: '#faq' },
 ];
 
 export default function Navbar() {
