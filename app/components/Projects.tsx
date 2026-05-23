@@ -41,11 +41,19 @@ export default function Projects() {
     <section id="projects" className="bg-bg-page py-10 md:py-20 lg:py-24">
       <div className={`${containerClass} flex flex-col gap-6 md:gap-14`}>
         <div className="flex flex-col gap-4 items-center text-center max-w-[871px] mx-auto">
-          <p className="font-label text-accent text-base uppercase leading-7">Naši Projekti</p>
+          <p className="font-label text-accent text-base uppercase leading-7">Projekti</p>
           <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
-            <span className="text-accent">Kvalitetna</span> Izvedba in{' '}
-            <span className="text-accent">Zanesljiva</span> Storitev za Vaše Električne Naloge!
+            <span className="text-accent">Kakovostna</span> in{' '}
+            <span className="text-accent">profesionalna</span> izvedba za zanesljivo delovanje
           </h2>
+
+          <p>Vsak projekt je rezultat strokovnega znanja, natančne izvedbe in odgovornega
+              pristopa do dela. Ne glede na velikost objekta je naš cilj vedno enak — varna,
+              učinkovita in dolgoročno zanesljiva elektro rešitev.</p>
+
+          <p>Ekipa EGH izvaja hišne in industrijske elektroinštalacije, vzdrževanje, meritve ter
+              specializirane električne priklope za podjetja, proizvodne objekte in zasebne
+              naročnike.</p>
         </div>
 
         <MobileScrollCarousel
