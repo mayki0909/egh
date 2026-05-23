@@ -3,33 +3,53 @@ export type GalleryImage = {
   alt: string;
 };
 
+const VIDEO_EXTENSIONS = /\.(mov|mp4|webm|ogg)$/i;
+
+export function isVideoAsset(src: string) {
+  return VIDEO_EXTENSIONS.test(src);
+}
+
 export const galleryImages: GalleryImage[] = [
-  {
-    src: "/assets/HisneInstalacije2.jpeg",
-    alt: "Hišna elektroinštalacija – Elektro Gal Harbaš Škofja Loka",
-  },
-  {
-    src: "/assets/Industrija2.jpeg",
-    alt: "Industrijska elektro instalacija v proizvodnem objektu – Elektro Gal Harbaš",
-  },
-  {
-    src: "/assets/HisneInstalacije4.jpeg",
-    alt: "Končna faza hišne elektro instalacije – Elektro Gal Harbaš",
-  },
-  {
-    src: "/assets/HisneInstalacije3.jpeg",
-    alt: "Električna napeljava v stanovanjski hiši – Elektro Gal Harbaš",
-  },
-  {
-    src: "/assets/RazniPriklopi2.jpeg",
-    alt: "Električni priklop v poslovnem objektu – Elektro Gal Harbaš",
-  },
-  // {
-  //   src: "/assets/RazniPriklopi3.jpeg",
-  //   alt: "Montaža električne opreme – Elektro Gal Harbaš Kranj",
-  // },
-  // {
-  //   src: "/assets/ZamrzovalnaKomora2.jpeg",
-  //   alt: "Montaža elektrike zamrzovalne komore – Elektro Gal Harbaš",
-  // },
+    {
+      src: "/assets/projekti/projekti1.jpeg",
+      alt: "Hišna elektroinštalacija - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti2.jpeg",
+      alt: "Hišna elektroinštalacija - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti3.jpeg",
+      alt: "Hišno talno gretje - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti4.jpeg",
+      alt: "Zaključna fina monterska dela - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti5.jpeg",
+      alt: "Industrijska elektroinštalacija - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti6.jpeg",
+      alt: "Popravilo industrijskega stroja - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti7.jpeg",
+      alt: "Popravilo industrijskega stroja - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti8.jpeg",
+      alt: "Priprava industrijske hale za električno priključitev - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti9.jpeg",
+      alt: "Vezava elektro omarice - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti10.mov",
+      alt: "Industrijska elektroinštalacija - EGH",
+    },
+
+  
 ];

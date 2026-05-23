@@ -10,21 +10,24 @@ export default function About() {
             <div className="flex flex-col gap-6 md:gap-10">
               <div className="flex flex-col gap-4">
                 <p className="font-label text-accent text-base uppercase leading-7">
-                  Vrhunske Električne Storitve
+                  Vrhunske Storitve
                 </p>
                 <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
-                  Zaupajte Strokovnjakom za{' '}
-                  <span className="text-accent">Vaše Električne Potrebe</span>!
+                  Zaupanje gradimo z {' '}
+                  <span className="text-accent">izvedbo</span>
                 </h2>
               </div>
               <p className="text-lg leading-8 text-text-primary">
-                Pri Elektro Gal Harbaš smo predani temu, da vam zagotovimo vrhunske električarske
-                storitve na lokalnem območju{' '}
-                <span className="font-bold text-accent">Škofje Loke, Kranja in Ljubljane</span>.
-                S strokovnostjo in zanesljivostjo izvajamo hišne in industrijske instalacije,
-                zamrzovalne komore, meritve ter vzdrževanje v domovih, podjetjih in industrijskih
-                objektih.
+                Poudarek dajemo kakovosti dela, jasni komunikaciji in tehnično dovršenim rešitvam,
+                ki naročnikom omogočajo brezskrbno uporabo električnih sistemov tudi na dolgi rok.
               </p>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
+                Vaš projekt, naša izvedba
+              </h2>
+              <p className="text-lg leading-8 text-text-primary">
+               Od prvega ogleda do zaključnih meritev poskrbimo za strokovno podporo, pregledno izvedbo in zanesljivo koordinacijo del.
+              </p>
+
               <a
                 href="mailto:info@egh.si"
                 className="inline-flex w-fit items-center justify-center bg-accent text-text-dark-btn font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"

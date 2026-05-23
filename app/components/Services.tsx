@@ -51,14 +51,12 @@ export default function Services() {
     <section id="services" className="bg-bg-section py-10 md:py-20">
       <div className={`${containerClass} flex flex-col gap-6 md:gap-14`}>
         <div className="flex flex-col gap-4 max-w-[871px]">
-          <p className="font-label text-accent text-base uppercase leading-7">Kaj ponujamo</p>
+          <p className="font-label text-accent text-base uppercase leading-7">STORITVE</p>
           <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
-            Celovite <span className="text-accent">elektro storitve</span> za dom, industrijo in
-            poslovne objekte
+            Celovite <span className="text-accent">elektro storitve</span> za dom, podjetja in industrijo
           </h2>
           <p className="text-text-muted-3 text-base md:text-lg leading-8 max-w-[720px]">
-            Od industrijskih in hišnih instalacij do meritev, zasilne razsvetljave in priklopov —
-            izvajamo vse na območju Škofje Loke, Kranja in Ljubljane.
+            Ekipa EGH izvaja profesionalne elektro storitve za stanovanjske, poslovne in industrijske objekte na območju Škofje Loke, Kranja, Ljubljane in širše Gorenjske.
           </p>
         </div>
 

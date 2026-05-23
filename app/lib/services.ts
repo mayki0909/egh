@@ -9,91 +9,91 @@ export type ServiceOffering = {
 export const services: ServiceOffering[] = [
   {
     slug: "industrijske-instalacije",
-    title: "Industrijske instalacije",
+    title: "Industrijske elektroinštalacije",
     description:
-      "Načrtovanje in izvedba elektroinštalacij v industrijskih objektih na območju Škofje Loke, Kranja in Ljubljane. Zanesljiva napajanja, razvodne omare in priključitve za proizvodne prostore.",
+      "Načrtovanje in izvedba elektroinštalacij za industrijske objekte, proizvodne prostore in delavnice. Poskrbimo za zanesljivo napajanje, razvodne sisteme, priklope strojev in optimalno delovanje industrijskih procesov.",
     image: "/assets/Industrija1.jpeg",
-    alt: "Industrijske elektro instalacije v industrijskem objektu – Elektro Gal Harbaš",
+    alt: "Industrijske elektro instalacije - EGH",
   },
   {
     slug: "hisne-instalacije",
-    title: "Hišne instalacije",
+    title: "Hišne elektroinštalacije",
     description:
-      "Popolne elektroinštalacije za stanovanjske hiše in večstanovanjske stavbe. Od predpriprave do končne priključitve v Škofji Loki, Kranju in okolici.",
+      "Izvedba celotnih elektroinštalacij za novogradnje, prenove stanovanj, hiš in večstanovanjskih objektov — od grobe priprave do končne montaže in priklopa.",
     image: "/assets/HisneInstalacije1.jpeg",
-    alt: "Hišna elektro instalacija v stanovanjski stavbi – Elektro Gal Harbaš",
+    alt: "Hišna elektro instalacija - EGH",
   },
   {
     slug: "priklop-elektricnih-stevcev",
     title: "Priklop električnih števcev",
     description:
-      "Priklop in menjava električnih števcev pri distributerju. Hitra in pravilna izvedba za gospodinjstva in poslovne objekte.",
+      "Uredimo priklop ali menjavo električnih števcev ter pripravimo vse potrebno za pravilno in varno priključitev pri distributerju električne energije.",
     image: "/assets/PriklopiElektricnihStevcev.jpg",
-    alt: "Priklop električnega števca – Elektro Gal Harbaš Kranj",
+    alt: "Priklop električnega števca - EGH",
   },
   {
     slug: "predpriprava-instalacije-v-betonskih-ploscah",
-    title: "Predpriprava instalacije v betonskih ploščah",
+    title: "Predpriprava inštalacij v betonskih ploščah",
     description:
-      "Predpriprava električnih vodov in dovodov v betonskih ploščah pred betonažo. Natančna izvedba za brezhibno nadaljnjo napeljavo.",
+      "Natančna priprava električnih vodov, cevi in dovodov pred betoniranjem za brezhibno nadaljnjo izvedbo elektroinštalacij.",
     image: "/assets/PredpipravaInstalacijeVBetonskihPloscah.jpeg",
-    alt: "Predpriprava elektro instalacije v betonski plošči – Elektro Gal Harbaš",
+    alt: "Predpriprava elektro instalacije v betonski plošči - EGH",
   },
   {
     slug: "razni-priklopi",
-    title: "Razni priklopi",
+    title: "Različni električni priklopi",
     description:
-      "Priklopi različnih električnih naprav, razdelilcev in opreme. Prilagojeno vašim potrebam v domu ali podjetju.",
+      "Izvajamo priklope električnih naprav, razdelilnih omaric, strojev, razsvetljave in druge električne opreme za dom ali poslovne objekte.",
     image: "/assets/RazniPriklopi1.jpeg",
-    alt: "Razni električni priklopi in montaža – Elektro Gal Harbaš",
+    alt: "Različni električni priklopi - EGH",
   },
   {
     slug: "urejanje-instalacij",
-    title: "Urejanje instalacij",
+    title: "Urejanje in posodobitev instalacij",
     description:
-      "Pregled, preureditev in posodobitev obstoječih elektroinštalacij. Izboljšanje varnosti in skladnosti z veljavnimi predpisi.",
+      "Pregledamo obstoječe elektroinštalacije, odpravimo nepravilnosti ter posodobimo sistem za večjo varnost, zanesljivost in skladnost s predpisi.",
     image: "/assets/UrejanjeInstalacij.jpeg",
-    alt: "Urejanje in preureditev elektro instalacij – Elektro Gal Harbaš",
+    alt: "Urejanje in preureditev elektro instalacij - EGH",
   },
   {
     slug: "pregled-in-popravila-zasilnih-razsvetljav",
-    title: "Pregled in popravila zasilnih razsvetljav",
+    title: "Pregled in servis zasilne razsvetljave",
     description:
-      "Redni pregledi, vzdrževanje in popravila zasilne razsvetljave v skladu z zahtevami. Za varno evakuacijo v poslovnih in javnih objektih.",
+      "Redni pregledi, vzdrževanje in popravila zasilne razsvetljave za poslovne, industrijske in javne objekte v skladu z varnostnimi zahtevami.",
     image: "/assets/PregledZasilnihRazsvetljav.jpg",
-    alt: "Pregled zasilne razsvetljave v objektu – Elektro Gal Harbaš",
+    alt: "Pregled zasilne razsvetljave v objektu - EGH",
   },
   {
     slug: "izdelava-zamrzovalnih-komor",
-    title: "Izdelava zamrzovalnih komor",
+    title: "Električna priprava zamrzovalnih komor",
     description:
-      "Električna priprava in priklop zamrzovalnih komor za gostinstvo, trgovine in industrijo. Skladna z varnostnimi zahtevami in lokalnimi predpisi.",
+      "Izvedba električnih povezav in priklopov zamrzovalnih komor za gostinske, trgovinske in industrijske objekte.",
     image: "/assets/ZamrzovalnaKomora1.jpeg",
     alt: "Električna instalacija zamrzovalne komore – Elektro Gal Harbaš",
   },
   {
     slug: "priprava-za-ozemljitev-naprav",
-    title: "Priprava za ozemljitev naprav",
+    title: "Ozemljitve električnih naprav",
     description:
-      "Priprava in izvedba ozemljitvenih sistemov za varno delovanje električnih naprav. Zaščita pred električnim udarom.",
+      "Izdelava in priprava ozemljitvenih sistemov za zaščito naprav, objektov in uporabnikov pred električnimi okvarami ter udari.",
     image: "/assets/PripravaOzemplitve.jpg",
-    alt: "Priprava ozemljitev električnih naprav – Elektro Gal Harbaš",
+    alt: "Priprava ozemljitev električnih naprav - EGH",
   },
   {
     slug: "popravila-strojev-in-elektricnih-naprav",
     title: "Popravila strojev in električnih naprav",
     description:
-      "Diagnostika in popravila industrijskih strojev ter električnih naprav. Hitro odpravljanje okvar v Škofji Loki, Kranju in Ljubljani.",
+      "Diagnostika napak ter popravilo industrijskih strojev, naprav in električnih sistemov z učinkovitim odpravljanjem okvar.",
     image: "/assets/PopravilaStrojevInElektricnihNaprav.jpg",
-    alt: "Tehnik pri popravilu električnega razdelilnega panela – Elektro Gal Harbaš",
+    alt: "Tehnik pri popravilu električnega razdelilnega panela - EGH",
   },
   {
     slug: "izvajanje-elektro-meritev-in-priprava-porocil",
-    title: "Izvajanje elektro meritev in priprava poročil",
+    title: "Elektro meritve in priprava poročil",
     description:
-      "Meritve upornosti izolacije, ozemljitve in drugih električnih parametrov. Priprava uradnih poročil za revizije in predaje objektov.",
+      "Izvajamo meritve elektroinštalacij, meritve ozemljitve, izolacije in drugih električnih parametrov ter pripravimo uradna poročila za potrebe revizij in tehničnih pregledov.",
     image: "/assets/ElektroMeritveInPorocila.jpg",
-    alt: "Električar pri merjenju napetosti v razdelilni omarici z multimetrom – Elektro Gal Harbaš",
+    alt: "Električar pri merjenju napetosti v razdelilni omarici z multimetrom - EGH",
   },
 ];
 
