@@ -1,5 +1,5 @@
 export type FeatureHighlight = {
-  iconKey: "sealCheck" | "shieldCheck" | "certificate";
+  iconKey: "sealCheck" | "shieldCheck" | "certificate" | "plugCharging";
   title: string;
   description: string;
 };
@@ -7,20 +7,26 @@ export type FeatureHighlight = {
 export const featureHighlights: FeatureHighlight[] = [
   {
     iconKey: "sealCheck",
-    title: "Lokalni električar z hitro odzivnostjo",
+    title: "Lokalna ekipa s hitro odzivnostjo",
     description:
-      "Elektro Gal Harbaš pokriva Škofjo Loko, Kranj, Ljubljano in okolico. Kratke poti do objekta pomenijo hitrejši začetek del, manj izpadov in osebno svetovanje na terenu.",
+      "Ekipa EGH deluje na območju Škofje Loke, Kranja, Ljubljane in okolice. Zaradi lokalne prisotnosti zagotavljamo hitro odzivnost, krajši čas izvedbe in osebni pristop pri vsakem projektu.",
   },
   {
     iconKey: "shieldCheck",
-    title: "Varnost in skladnost z predpisi",
+    title: "Varnost in izvedba po veljavnih predpisih",
     description:
-      "Vsaka instalacija, priklop in pregled zasilne razsvetljave izvedemo skladno z veljavnimi predpisi. Izvajamo elektro meritve in pripravimo poročila za revizije ter predajo objektov.",
+      "Vsako inštalacijo, priklop ali pregled izvedemo strokovno in skladno z aktualnimi elektro standardi ter predpisi. Izvajamo tudi elektro meritve in pripravo dokumentacije za revizije ter predajo objektov."
   },
   {
     iconKey: "certificate",
-    title: "Celovita izvedba od A do Ž",
+    title: "Celovite elektro storitve na enem mestu",
     description:
-      "Od hišnih in industrijskih instalacij do zamrzovalnih komor, priklopov števcev in urejanja obstoječih napeljav — en partner za vse električne naloge v vašem domu ali podjetju.",
+      "Od novogradenj do prenov, od hišnih instalacij do industrijskih sistemov — poskrbimo za celotno izvedbo elektro del, vzdrževanje in podporo tudi po zaključku projekta.",
+  },
+  {
+    iconKey: "plugCharging",
+    title: "Kakovost, ki ostane dolgoročno",
+    description:
+      "Pri delu uporabljamo preverjene materiale in rešitve, ki zagotavljajo zanesljivo delovanje, večjo energetsko učinkovitost in manj možnosti za kasnejše okvare."
   },
 ];

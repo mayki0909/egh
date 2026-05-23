@@ -6,6 +6,7 @@ const iconByKey = {
   sealCheck: figmaAssets.iconSealCheck,
   shieldCheck: figmaAssets.iconShieldCheck,
   certificate: figmaAssets.iconCertificate,
+  plugCharging: figmaAssets.iconPlugCharging,
 } as const;
 
 function IconBox({ src, alt }: { src: string; alt: string }) {
@@ -27,24 +28,22 @@ export default function Features() {
       <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
         <div className="flex flex-col gap-4 items-center text-center max-w-[871px] mx-auto">
           <p className="font-label text-accent text-base uppercase leading-7">
-            Zakaj Elektro Gal Harbaš
+            Zakaj EGH?
           </p>
           <h2
             id="features-heading"
             className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight"
           >
-            Vaš <span className="text-accent">električar v Kranju</span> in Škofji Loki za
-            zanesljive elektro rešitve
+            Zanesljiv partner za <span className="text-accent">eelektroinštalacije</span>, meritve in vzdrževanje
           </h2>
           <p className="text-text-muted-2 text-base md:text-lg leading-8">
-            Specializirani smo za industrijske in hišne elektroinštalacije, meritve, zasilno
-            razsvetljavo ter vzdrževanje. Z lokalno prisotnostjo in strokovno izvedbo zagotavljamo
-            varnost, kakovost in dolgoročno zadovoljstvo strank v Gorenjski regiji in na območju
-            Ljubljane.
+            V podjetju Elektro Ghal verjamemo, da dobre elektroinštalacije niso le tehnična
+            izvedba, ampak temelj varnosti, učinkovitosti in brezskrbnega delovanja objekta,
+            zato vsak projekt izvajamo natančno, premišljeno in skladno z veljavnimi standardi.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
           {featureHighlights.map((feature) => (
             <article
               key={feature.title}
