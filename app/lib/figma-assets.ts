@@ -3,7 +3,6 @@ export const figmaAssets = {
   servicesImage: "/figma/services-image.jpg",
   mapImage: "/figma/map.png",
   logo: "/figma/logo.svg",
-  testimonialAvatar: "/figma/testimonial-avatar.png",
   iconSealCheck: "/figma/icon-seal-check.svg",
   iconShieldCheck: "/figma/icon-shield-check.svg",
   iconCertificate: "/figma/icon-certificate.svg",

@@ -1,32 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import FigmaAsset from './FigmaAsset';
 import { containerClass, figmaAssets } from '../lib/figma-assets';
+import { testimonials } from '../lib/testimonials';
 
-const testimonials = [
-  {
-    quote:
-      '"Tomorro has dramatically improved our ability to manage contracts accurately and quickly. Its intuitive interface and robust feature set perfectly match the requirements of our industry."',
-    name: 'Alexia Delahousse',
-    role: 'Vp Legal, Qonto',
-    stars: 4,
-  },
-  {
-    quote:
-      '"Tomorro has dramatically improved our ability to manage contracts accurately and quickly. Its intuitive interface and robust feature set perfectly match the requirements of our industry."',
-    name: 'Alexia Delahousse',
-    role: 'Vp Legal, Qonto',
-    stars: 5,
-  },
-  {
-    quote:
-      '"Tomorro has dramatically improved our ability to manage contracts accurately and quickly. Its intuitive interface and robust feature set perfectly match the requirements of our industry."',
-    name: 'Alexia Delahousse',
-    role: 'Vp Legal, Qonto',
-    stars: 5,
-  },
-];
+const SLIDE_COUNT = testimonials.length;
+const LG_MEDIA = '(min-width: 1024px)';
 
 function StarRating({ count }: { count: number }) {
   return (
@@ -44,14 +24,98 @@ function StarRating({ count }: { count: number }) {
   );
 }
 
-export default function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(0);
+function TestimonialCard({
+  quote,
+  name,
+  role,
+  stars,
+  compact,
+}: {
+  quote: string;
+  name: string;
+  role: string;
+  stars: number;
+  compact?: boolean;
+}) {
+  return (
+    <div
+      className={`bg-bg-card rounded-lg flex flex-col justify-between ${
+        compact
+          ? 'p-8 gap-12 min-h-[400px]'
+          : 'p-10 gap-20 min-h-[485px]'
+      }`}
+    >
+      <p
+        className={`text-text-primary font-medium leading-8 ${
+          compact ? 'text-lg' : 'text-xl'
+        }`}
+      >
+        {quote}
+      </p>
+      <div className="flex flex-col gap-2">
+        <p className={compact ? 'text-base' : 'text-lg'}>
+          <span className="font-bold text-accent">{name}</span>
+          <span className="text-text-muted-2 font-medium"> • {role}</span>
+        </p>
+        <StarRating count={stars} />
+      </div>
+    </div>
+  );
+}
 
-  const goPrev = () => setActiveIndex((i) => (i === 0 ? testimonials.length - 1 : i - 1));
-  const goNext = () => setActiveIndex((i) => (i === testimonials.length - 1 ? 0 : i + 1));
+export default function Testimonials() {
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(1);
+
+  const maxIndex = Math.max(0, SLIDE_COUNT - visibleCount);
+  const clampedIndex = Math.min(activeIndex, maxIndex);
+
+  const applyTranslate = useCallback(() => {
+    const viewport = viewportRef.current;
+    const track = trackRef.current;
+    if (!viewport || !track) return;
+    const slide = viewport.querySelectorAll('[data-slide]')[clampedIndex] as
+      | HTMLElement
+      | undefined;
+    track.style.transform = `translateX(-${slide?.offsetLeft ?? 0}px)`;
+  }, [clampedIndex]);
+
+  useEffect(() => {
+    const mq = window.matchMedia(LG_MEDIA);
+    const apply = () => {
+      const nextVisible = mq.matches ? 3 : 1;
+      setVisibleCount(nextVisible);
+      setActiveIndex((i) =>
+        Math.min(i, Math.max(0, SLIDE_COUNT - nextVisible)),
+      );
+    };
+    apply();
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, []);
+
+  useLayoutEffect(() => {
+    applyTranslate();
+  }, [applyTranslate, visibleCount]);
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    const ro = new ResizeObserver(() => applyTranslate());
+    ro.observe(viewport);
+    return () => ro.disconnect();
+  }, [applyTranslate]);
+
+  const goPrev = () =>
+    setActiveIndex((i) => (i === 0 ? maxIndex : i - 1));
+  const goNext = () =>
+    setActiveIndex((i) => (i === maxIndex ? 0 : i + 1));
 
   return (
-    <section className="bg-bg-page py-16 md:py-20 lg:py-24">
+    <section id="testimonials" className="bg-bg-page py-16 md:py-20 lg:py-24">
       <div className={`${containerClass} flex flex-col gap-10 md:gap-14`}>
         <div className="flex flex-col gap-4 items-center text-center max-w-[871px] mx-auto">
           <p className="font-label text-accent text-base uppercase leading-7">Stranke</p>
@@ -60,101 +124,60 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        {/* Desktop: 3 cards */}
-        <div className="hidden lg:grid lg:grid-cols-3 gap-6">
-          {testimonials.map((t, index) => (
+        <div className="flex flex-col gap-10 items-center">
+          <div ref={viewportRef} className="w-full overflow-hidden">
             <div
-              key={index}
-              className="bg-bg-card rounded-lg p-10 flex flex-col justify-between gap-20 min-h-[485px]"
-            >
-              <p className="text-text-primary text-xl leading-8 font-medium">{t.quote}</p>
-              <div className="flex flex-col gap-2">
-                <FigmaAsset
-                  src={figmaAssets.testimonialAvatar}
-                  alt={t.name}
-                  width={64}
-                  height={64}
-                  className="rounded-full object-cover"
-                />
-                <p className="text-lg">
-                  <span className="font-bold text-accent">{t.name}</span>
-                  <span className="text-text-muted-2 font-medium"> • {t.role}</span>
-                </p>
-                <StarRating count={t.stars} />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile / tablet: carousel */}
-        <div className="lg:hidden flex flex-col gap-10 items-center">
-          <div className="w-full overflow-hidden">
-            <div
-              className="flex transition-transform duration-300 ease-out"
-              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+              ref={trackRef}
+              className="flex gap-6 transition-transform duration-300 ease-out"
             >
               {testimonials.map((t, index) => (
-                <div key={index} className="w-full shrink-0 px-1">
-                  <div className="bg-bg-card rounded-lg p-8 flex flex-col gap-12 min-h-[400px]">
-                    <p className="text-text-primary text-lg leading-8 font-medium">{t.quote}</p>
-                    <div className="flex flex-col gap-2">
-                      <FigmaAsset
-                        src={figmaAssets.testimonialAvatar}
-                        alt={t.name}
-                        width={64}
-                        height={64}
-                        className="rounded-full object-cover"
-                      />
-                      <p className="text-base">
-                        <span className="font-bold text-accent">{t.name}</span>
-                        <span className="text-text-muted-2 font-medium"> • {t.role}</span>
-                      </p>
-                      <StarRating count={t.stars} />
-                    </div>
-                  </div>
+                <div
+                  key={index}
+                  data-slide
+                  className="shrink-0 w-full lg:w-[calc((100%-3rem)/3)]"
+                >
+                  <TestimonialCard
+                    quote={t.quote}
+                    name={t.name}
+                    role={t.role}
+                    stars={t.stars}
+                    compact={visibleCount === 1}
+                  />
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center justify-center">
             <button
               type="button"
               onClick={goPrev}
-              className="hover:opacity-80 transition-opacity"
+              className="w-[60px] h-[60px] relative hover:opacity-80 transition-opacity"
               aria-label="Prejšnja mnenja"
             >
-              <FigmaAsset src={figmaAssets.carouselPrev} alt="" width={60} height={60} />
+              <FigmaAsset
+                src={figmaAssets.carouselPrev}
+                alt=""
+                width={60}
+                height={60}
+                className="pointer-events-none"
+              />
             </button>
             <button
               type="button"
               onClick={goNext}
-              className="hover:opacity-80 transition-opacity"
+              className="w-[60px] h-[60px] relative hover:opacity-80 transition-opacity"
               aria-label="Naslednja mnenja"
             >
-              <FigmaAsset src={figmaAssets.carouselNext} alt="" width={60} height={60} />
+              <FigmaAsset
+                src={figmaAssets.carouselNext}
+                alt=""
+                width={60}
+                height={60}
+                className="pointer-events-none"
+              />
             </button>
           </div>
-        </div>
-
-        {/* Desktop carousel controls (decorative, same as Figma) */}
-        <div className="hidden lg:flex justify-center gap-4">
-          <button
-            type="button"
-            onClick={goPrev}
-            className="w-[60px] h-[60px] relative hover:opacity-80 transition-opacity"
-            aria-label="Prejšnja mnenja"
-          >
-            <FigmaAsset src={figmaAssets.carouselPrev} alt="" width={60} height={60} />
-          </button>
-          <button
-            type="button"
-            onClick={goNext}
-            className="w-[60px] h-[60px] relative hover:opacity-80 transition-opacity"
-            aria-label="Naslednja mnenja"
-          >
-            <FigmaAsset src={figmaAssets.carouselNext} alt="" width={60} height={60} />
-          </button>
         </div>
       </div>
     </section>
