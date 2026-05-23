@@ -6,53 +6,63 @@ export type FaqItem = {
 export const faqs: FaqItem[] = [
   {
     question:
-      'Na kaj moram biti pozoren oz. kakšni so znaki ko prihaja do električnih težav doma?',
+      'Na katere znake električnih težav moram biti doma pozoren?',
     answer:
-      'Najpogostejši znaki za težave z elektroinštalacijo v samostojnem domačem objektu ali v bloku v Kranju in okolici so: nenavadno utripanje luči ali izguba intenzitete svetlobe, redni izmet varovalk, šumenje ali brenčanju podobni zvoki v bližini električne napeljave, tople ali razbarvane vtičnice, vonj po zažganem brez razloga, iskrenje ob uporabi stikala ali vtičnice, ter nerazumno povišani stroški elektrike. V primeru vonja po zažganem nujno izklopite vse varovalke, saj je to lahko prvi znak za požarno nevarnost.',
+      'Najpogostejši znaki težav z elektroinštalacijo so utripanje luči, pogosto izpadanje varovalk, segrevanje vtičnic ali stikal, vonj po zažganem, iskrenje ter nenavadni zvoki v bližini električne napeljave. Pozorni bodite tudi na nenadno povečanje porabe električne energije brez očitnega razloga.<br />Če zaznate vonj po zažganem ali opazite poškodovano napeljavo, priporočamo takojšen izklop elektrike in strokovni pregled inštalacije.',
   },
   {
-    question: 'Ali lahko isti električar opravlja delo na stanovanjskih in poslovnih objektih?',
+    question:
+      'Ali isti električar lahko izvaja dela na stanovanjskih in poslovnih objektih?',
     answer:
-      'Električar, ki je tako dobro izobražen in strokovno podkovan, da lahko elektroinštalacijska dela opravlja v industrijskih in drugih obratih, prav gotovo lahko več kot kvalitetno delo opravi tudi na vašem domu v Kranju, Škofji Loki in okolici. Posledica najema takšnega strokovnjaka se po navadi pokaže v višji strokovnosti in zanesljivosti.',
+      'Da. Električar z ustreznim znanjem in izkušnjami lahko kakovostno izvaja elektro dela tako v stanovanjskih kot tudi poslovnih in industrijskih objektih. Delo v zahtevnejših industrijskih okoljih pogosto pomeni še višjo stopnjo tehnične usposobljenosti in natančnosti pri izvedbi.',
   },
   {
-    question: 'Kakšne so razlike med stanovanjskimi in poslovnimi električarji?',
+    question:
+      'Ali ima ekipa EGH ustrezna dovoljenja in usposobljenost?',
     answer:
-      'Najočitnejša razlika med domačimi električarji in električarji, ki izvajajo elektroinštalacijska dela na poslovnih objektih v Kranju in okolici, je zahtevnost in obsežnost dela. Delo električarja za končne stranke običajno obsega manj kompleksna dela kot so menjava vtičnic in stikal, inštalacija svetil, inštalacija bele tehnike. Komercialni električarji pa upravljajo z večjimi sistemi, kot je razsvetljava za pisarne, priklopi industrijske opreme, montaža sončnih elektrarn ali pametnih inštalacij.',
+      'Da. Elektro dejavnost se izvaja skladno z veljavnimi predpisi in registriranimi dejavnostmi. Pri delu upoštevamo varnostne standarde ter strokovne smernice za izvajanje elektroinštalacij, priklopov in meritev. Imamo tako srednješolsko izobrazbo, kot tudi mojstrski naziv.',
   },
   {
-    question: 'Ali imajo električarji licenco in zavarovanje?',
+    question:
+      'Kaj storiti v primeru električne okvare ali izrednega dogodka?',
     answer:
-      'Da, vsak električar, ki izvaja elektroinštalacijska dela v Kranju in okolici, mora pridobiti obrtno dovoljenje in se vpisati v obrtni register pri Obrtno-podjetniški zbornici Slovenije. Električar, ki želi opravljati dejavnost gradbeništva, mora imeti vpisano dejavnost gradbeništva v poslovni register kot gospodarski subjekt in zavarovano odgovornost za škodo v zvezi z opravljanjem svoje dejavnosti.',
+      'Če je varno, najprej izklopite varovalke oziroma glavno stikalo. Ne dotikajte se poškodovanih kablov ali električnih naprav. Ob sumu na požar ali nevarnost električnega udara se umaknite na varno in pokličite pristojne službe.<br />V primeru električnih okvar priporočamo čim hitrejši pregled elektroinštalacije.',
   },
   {
-    question: 'Kaj storiti v primeru izrednega dogodka oz. nesreče?',
+    question:
+      'Kaj storiti ob izpadu električne energije?',
     answer:
-      'Če je možno in varno, izklopite vse varovalke doma. Ne dotikajte se nobenih žic, ki bi morebiti gledale iz zidov vašega doma. Sebe in svoje najdražje umaknite iz stanovanja ali hiše na varnostno razdaljo. Pokličite dežurnega električarja v Kranju in okolici na 030 628 310! V primeru požara pokličite 112.',
+      'Najprej preverite, ali je prišlo do izpada tudi v okolici. Nato preverite stanje varovalk in morebitno preobremenitev omrežja zaradi uporabe več naprav hkrati. Če težava ostaja samo v vašem objektu, je lahko vzrok v elektroinštalaciji ali priključeni napravi.',
   },
   {
-    question: 'Kaj naj storim, če pride do izpada električne energije?',
+    question:
+      'Kakšne so prednosti prenove oziroma nadgradnje elektroinštalacij?',
     answer:
-      'V kolikor vidite, da težava ni v varovalki in preobremenjenosti električne napeljave zaradi prevelike uporabe številnih naprav, preverite ali je elektrike zmanjkalo tudi pri sosedih. V kolikor elektrike ni na širšem območju, lahko pokličete Elektro Ljubljana za informacije o izklopu električnega toka. V kolikor je težava omejena le na vaše stanovanje ali hišo, pa pokličite električarja v Kranju ali okolici, da odkrije težavo oz. napako, ki povzroča izpade električne energije.',
+      'Posodobitev elektroinštalacij poveča varnost objekta, zmanjša možnost električnih okvar in omogoča bolj učinkovito uporabo sodobnih naprav. Poleg večje zanesljivosti lahko prenova prispeva tudi k nižji porabi energije in pripravi objekta na pametne elektro sisteme.',
   },
   {
-    question: 'Kakšne so prednosti nadgradnje električnega sistema v stanovanju ali hiši?',
+    question:
+      'Katere nadgradnje elektroinštalacij so najpogostejše pri prenovi starejših objektov?',
     answer:
-      'Nadgradnja vašega električnega sistema v Kranju in okolici ima številne prednosti. Med najbolj očitnimi je povečana varnost pred rizikom vžiga ali večjih izpadov električne energije, izboljša se delovanje vaših električnih naprav in njihova življenjska doba, zmanjša se poraba električne energije in s tem stroški, sistem lahko nadgradite v pametni sistem za pametni dom.',
+      'Pri prenovah se najpogosteje izvaja zamenjava dotrajane napeljave, menjava razdelilnih omaric, dodajanje novih vtičnic in tokokrogov ter nadgradnja zaščitnih elementov za večjo varnost. Pogosta je tudi priprava instalacij za sodobno razsvetljavo, pametne sisteme in energetsko učinkovite rešitve.',
   },
   {
-    question: 'Kaj so najpogostejše nadgradnje elektroinštalacij pri prenovi starejšega doma?',
+    question:
+      'Ali lahko električar pomaga pri izboljšanju energetske učinkovitosti?',
     answer:
-      'Najpogostejše nadgradnje elektroinštalacij pri prenovi starejšega doma v Kranju in okolici vključujejo: zamenjavo zastarele električne napeljave s sodobnimi materiali, namestitev dodatnih vtičnic za zmanjšanje odvisnosti od podaljškov, nadgradnjo omarice z varovalkami za povečanje zmogljivosti, namestitev GFCI vtičnic v kuhinjah in kopalnicah za večjo varnost, dodajanje energetsko učinkovite razsvetljave in tehnologije pametnega doma.',
+      'Seveda. Ekipa EGH lahko svetuje in izvede rešitve za bolj učinkovito rabo električne energije, kot so LED razsvetljava, optimizacija porabe, sodobni električni sistemi ter priprava instalacij za pametne naprave in avtomatizacijo.',
   },
   {
-    question: 'Ali lahko električarji pomagajo pri izboljšavah energetske učinkovitosti?',
+    question:
+      'Kaj priporočate pred obiskom električarja?',
     answer:
-      'Seveda, električarji v Kranju in okolici lahko pomagajo pri izboljšavah energetske učinkovitosti. Po želji naročnika, vam bo električar svetoval, priporočil in namestil energetsko učinkovito razsvetljavo, pametne termostate in sisteme za upravljanje z energijo.',
+      'Priporočamo, da pripravite seznam opaženih težav ali želja glede izvedbe. Omogočite dostop do električne omarice in delovnih površin, po potrebi pa odstranite ovire v prostoru, kjer se bodo izvajala dela.',
   },
   {
-    question: 'Kaj moram storiti in pripraviti pred obiskom električarja?',
+    question:
+      'Ali izvajate tudi elektro meritve in pripravo poročil?',
     answer:
-      'Pred obiskom električarja v Kranju ali okolici priporočamo: naredite seznam vseh električnih težav ali projektov, o katerih se želite pogovoriti, očistite delovno območje ovir za lažji dostop, zagotovite, da so hišni ljubljenčki zavarovani in zaprti v varen prostor, bodite na voljo za odgovore na vprašanja in omogočite dostop do omarice z varovalkami.',
+      'Da. Izvajamo meritve elektroinštalacij, ozemljitve, izolacije in drugih električnih parametrov ter pripravimo ustrezna poročila za tehnične preglede, revizije in predajo objektov.',
   },
+
 ];

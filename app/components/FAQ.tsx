@@ -1,6 +1,24 @@
 import { ChevronDown } from 'lucide-react';
+import { Fragment } from 'react';
 import { containerClass } from '../lib/figma-assets';
 import { faqs } from '../lib/faqs';
+
+const BR_TAG = /<br\s*\/?>/gi;
+
+function FaqAnswer({ text }: { text: string }) {
+  const parts = text.split(BR_TAG).map((part) => part.trim());
+
+  return (
+    <p className="text-text-muted-2 text-base leading-7 pt-4">
+      {parts.map((part, index) => (
+        <Fragment key={index}>
+          {index > 0 && <br />}
+          {part}
+        </Fragment>
+      ))}
+    </p>
+  );
+}
 
 export default function FAQ() {
   return (
@@ -18,13 +36,9 @@ export default function FAQ() {
             id="faq-heading"
             className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight"
           >
-            Električne storitve v{' '}
-            <span className="text-accent">Kranju in okolici</span>
+            Odgovori na najpogostejša vprašanja o{' '}
+            <span className="text-accent">elektro storitvah</span>
           </h2>
-          <p className="text-text-muted-2 text-base md:text-lg leading-8">
-            Odgovori na najpogostejša vprašanja o električnih storitvah, dežurni pomoči in
-            elektroinštalacijah v Kranju, Škofji Loki in okolici.
-          </p>
         </div>
 
         <div className="mx-auto w-full max-w-[900px] flex flex-col gap-4">
@@ -43,7 +57,7 @@ export default function FAQ() {
                 />
               </summary>
               <div className="border-t border-border-subtle px-6 pb-5 sm:px-8 sm:pb-6">
-                <p className="text-text-muted-2 text-base leading-7 pt-4">{faq.answer}</p>
+                <FaqAnswer text={faq.answer} />
               </div>
             </details>
           ))}

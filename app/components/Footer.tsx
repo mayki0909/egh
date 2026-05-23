@@ -67,8 +67,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-[10px] text-text-primary opacity-40 font-medium">
+        <div className="text-[10px] text-text-primary opacity-40 font-medium flex flex-col gap-1">
           <p>© {currentYear} {companyName}</p>
+          <p>
+            Created by{' '}
+            <a
+              href="https://znidar.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-100 transition-opacity"
+            >
+              Miha Žnidar
+            </a>
+          </p>
         </div>
       </div>
 
