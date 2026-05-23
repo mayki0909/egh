@@ -3,6 +3,12 @@ export type GalleryImage = {
   alt: string;
 };
 
+const VIDEO_EXTENSIONS = /\.(mov|mp4|webm|ogg)$/i;
+
+export function isVideoAsset(src: string) {
+  return VIDEO_EXTENSIONS.test(src);
+}
+
 export const galleryImages: GalleryImage[] = [
     {
       src: "/assets/projekti/projekti1.jpeg",
@@ -39,6 +45,10 @@ export const galleryImages: GalleryImage[] = [
     {
       src: "/assets/projekti/projekti9.jpeg",
       alt: "Vezava elektro omarice - EGH",
+    },
+    {
+      src: "/assets/projekti/projekti10.mov",
+      alt: "Industrijska elektroinštalacija - EGH",
     },
 
   

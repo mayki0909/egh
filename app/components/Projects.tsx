@@ -1,7 +1,7 @@
 import FigmaAsset from './FigmaAsset';
 import MobileScrollCarousel from './MobileScrollCarousel';
 import { containerClass } from '../lib/figma-assets';
-import { galleryImages } from '../lib/gallery';
+import { galleryImages, isVideoAsset } from '../lib/gallery';
 
 function GalleryTile({
   src,
@@ -12,24 +12,56 @@ function GalleryTile({
   alt: string;
   variant?: 'scroll' | 'grid';
 }) {
-  const tileClass =
-    variant === 'scroll'
-      ? 'relative rounded-lg overflow-hidden w-full h-[180px] bg-bg-placeholder'
-      : 'relative rounded-lg overflow-hidden h-[280px] md:h-[424px] bg-bg-placeholder';
+  if (variant === 'scroll') {
+    const mediaClass = 'block w-full h-auto rounded-lg';
+
+    return (
+      <div className="w-full">
+        {isVideoAsset(src) ? (
+          <video
+            src={src}
+            className={mediaClass}
+            muted
+            loop
+            playsInline
+            autoPlay
+            aria-label={alt}
+          />
+        ) : (
+          <FigmaAsset
+            src={src}
+            alt={alt}
+            width={1200}
+            height={900}
+            className={mediaClass}
+            sizes="calc(100vw - 4rem)"
+          />
+        )}
+      </div>
+    );
+  }
 
   return (
-    <div className={tileClass}>
-      <FigmaAsset
-        src={src}
-        alt={alt}
-        fill
-        className="object-cover"
-        sizes={
-          variant === 'scroll'
-            ? 'calc(100vw - 4rem)'
-            : '(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw'
-        }
-      />
+    <div className="relative rounded-lg overflow-hidden h-[280px] md:h-[424px] bg-bg-placeholder">
+      {isVideoAsset(src) ? (
+        <video
+          src={src}
+          className="absolute inset-0 h-full w-full object-cover"
+          muted
+          loop
+          playsInline
+          autoPlay
+          aria-label={alt}
+        />
+      ) : (
+        <FigmaAsset
+          src={src}
+          alt={alt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+        />
+      )}
     </div>
   );
 }
@@ -58,8 +90,8 @@ export default function Projects() {
 
         <MobileScrollCarousel
           ariaLabel="Galerija projektov"
-          slideClassName="w-[min(72vw,260px)]"
-          hintText="Podrsajte za več fotografij"
+          slideClassName="w-[calc(100vw-4rem)]"
+          hintText="Podrsajte za več"
         >
           {galleryImages.map((img) => (
             <GalleryTile key={img.src} src={img.src} alt={img.alt} variant="scroll" />
