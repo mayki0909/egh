@@ -10,7 +10,7 @@ export default function About() {
             <div className="flex flex-col gap-6 md:gap-10">
               <div className="flex flex-col gap-4">
                 <p className="font-label text-accent text-base uppercase leading-7">
-                  Vrhunske Električne Storitve
+                  Vrhunske Storitve
                 </p>
                 <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight">
                   Zaupanje gradimo z {' '}
