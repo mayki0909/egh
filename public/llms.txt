@@ -1,8 +1,20 @@
-# Elektro Gal Harbaš (egh.si)
+# Elektro Ghal (EGH) — egh.si
 
-> Elektroinštalacije, Gal Harbaš s.p. — lokalni električar za industrijske in hišne elektroinštalacije, meritve, zasilno razsvetljavo, priklop števcev in vzdrževanje v Škofji Loki, Kranju, Ljubljani in na Gorenjskem.
+> Elektroinštalacije, Gal Harbaš s.p. — lokalni partner za hišne in industrijske elektroinštalacije, meritve, priklop števcev, zasilno razsvetljavo in vzdrževanje v Škofji Loki, Kranju, Ljubljani in na Gorenjskem. Strokovnost, odzivnost in zanesljivost.
 
 Jezik spletne strani: slovenščina (`sl`). Uradna domena: https://www.egh.si/
+
+Tržna blagovna znamka: **Elektro Ghal** (kratica **EGH**). Pravno ime: **Elektroinštalacije, Gal Harbaš s.p.**
+
+## O podjetju
+
+Pri EGH smo zavezani kakovostni, varni in zanesljivi izvedbi elektro storitev na območju Škofje Loke, Kranja, Ljubljane in širše Gorenjske regije. Specializirani smo za hišne in industrijske elektroinštalacije, elektro meritve, priklope ter vzdrževanje električnih sistemov.
+
+Naše delo temelji na natančnosti, odgovornosti in kakovostni izvedbi. Pri vsakem projektu se prilagodimo potrebam naročnika ter poiščemo učinkovite in dolgoročno zanesljive rešitve — od stanovanjskih hiš do zahtevnejših industrijskih sistemov.
+
+Poudarek dajemo kakovosti dela, jasni komunikaciji in tehnično dovršenim rešitvam. Od prvega ogleda do zaključnih meritev poskrbimo za strokovno podporo, pregledno izvedbo in zanesljivo koordinacijo del.
+
+Elektro dejavnost se izvaja skladno z veljavnimi predpisi in registriranimi dejavnostmi. Ekipa ima srednješolsko izobrazbo in mojstrski naziv.
 
 ## Kontakt
 
@@ -13,34 +25,115 @@ Jezik spletne strani: slovenščina (`sl`). Uradna domena: https://www.egh.si/
 
 ## Območje storitev
 
-Kranj, Škofja Loka, Ljubljana in okolica (Gorenjska regija).
+Škofja Loka, Kranj, Ljubljana in širša Gorenjska regija.
 
 ## Storitve
 
-- Industrijske instalacije — načrtovanje in izvedba elektroinštalacij v industrijskih objektih
-- Hišne instalacije — elektroinštalacije za stanovanjske hiše in večstanovanjske stavbe
-- Priklop električnih števcev — priklop in menjava pri distributerju
-- Predpriprava instalacije v betonskih ploščah — vodovi in dovodi pred betonažo
-- Razni priklopi — priklopi naprav, razdelilcev in opreme
-- Urejanje instalacij — pregled, preureditev in posodobitev obstoječih napeljav
-- Pregled in popravila zasilnih razsvetljav — vzdrževanje v skladu z zahtevami
-- Izdelava zamrzovalnih komor — električna priprava za gostinstvo, trgovine in industrijo
-- Priprava za ozemljitev naprav — ozemljitveni sistemi
-- Popravila strojev in električnih naprav — diagnostika in odpravljanje okvar
-- Izvajanje elektro meritev in priprava poročil — meritve in uradna poročila za revizije
+Ekipa EGH izvaja profesionalne elektro storitve za stanovanjske, poslovne in industrijske objekte.
 
-## Zakaj izbrati nas
+### Industrijske elektroinštalacije
+Načrtovanje in izvedba elektroinštalacij za industrijske objekte, proizvodne prostore in delavnice. Zanesljivo napajanje, razvodni sistemi, priklopi strojev in optimalno delovanje industrijskih procesov.
 
-- Lokalni električar z hitro odzivnostjo na terenu
-- Varnost in skladnost z veljavnimi predpisi; elektro meritve in poročila
-- Celovita izvedba od A do Ž — en partner za dom in podjetje
+### Hišne elektroinštalacije
+Celotne elektroinštalacije za novogradnje, prenove stanovanj, hiš in večstanovanjskih objektov — od grobe priprave do končne montaže in priklopa.
+
+### Priklop električnih števcev
+Priklop ali menjava električnih števcev ter priprava vsega potrebnega za pravilno in varno priključitev pri distributerju električne energije.
+
+### Predpriprava inštalacij v betonskih ploščah
+Natančna priprava električnih vodov, cevi in dovodov pred betoniranjem za brezhibno nadaljnjo izvedbo elektroinštalacij.
+
+### Različni električni priklopi
+Priklope električnih naprav, razdelilnih omaric, strojev, razsvetljave in druge električne opreme za dom ali poslovne objekte.
+
+### Urejanje in posodobitev instalacij
+Pregled obstoječih elektroinštalacij, odprava nepravilnosti ter posodobitev sistema za večjo varnost, zanesljivost in skladnost s predpisi.
+
+### Pregled in servis zasilne razsvetljave
+Redni pregledi, vzdrževanje in popravila zasilne razsvetljave za poslovne, industrijske in javne objekte v skladu z varnostnimi zahtevami.
+
+### Električna priprava zamrzovalnih komor
+Električne povezave in priklopi zamrzovalnih komor za gostinske, trgovinske in industrijske objekte.
+
+### Ozemljitve električnih naprav
+Izdelava in priprava ozemljitvenih sistemov za zaščito naprav, objektov in uporabnikov pred električnimi okvarami ter udari.
+
+### Popravila strojev in električnih naprav
+Diagnostika napak ter popravilo industrijskih strojev, naprav in električnih sistemov z učinkovitim odpravljanjem okvar.
+
+### Elektro meritve in priprava poročil
+Meritve elektroinštalacij, ozemljitve, izolacije in drugih električnih parametrov ter uradna poročila za revizije in tehnične preglede.
+
+## Zakaj EGH
+
+V podjetju Elektro Ghal verjamemo, da dobre elektroinštalacije niso le tehnična izvedba, ampak temelj varnosti, učinkovitosti in brezskrbnega delovanja objekta. Vsak projekt izvajamo natančno, premišljeno in skladno z veljavnimi standardi.
+
+- **Lokalna ekipa s hitro odzivnostjo** — delovanje na območju Škofje Loke, Kranja, Ljubljane in okolice; krajši čas izvedbe in osebni pristop.
+- **Varnost in izvedba po veljavnih predpisih** — strokovna izvedba skladno s standardi; elektro meritve in dokumentacija za revizije ter predajo objektov.
+- **Celovite elektro storitve na enem mestu** — od novogradenj do prenov, od hišnih instalacij do industrijskih sistemov; vzdrževanje in podpora po zaključku projekta.
+- **Kakovost, ki ostane dolgoročno** — preverjeni materiali in rešitve za zanesljivo delovanje in manj kasnejših okvar.
+
+## Pogosta vprašanja
+
+**Na katere znake električnih težav moram biti doma pozoren?**
+Utripanje luči, pogosto izpadanje varovalk, segrevanje vtičnic ali stikal, vonj po zažganem, iskrenje, nenadni porast porabe brez razloga. Ob vonju po zažganem ali poškodovani napeljavi takoj izklopite elektriko in pokličite strokovni pregled.
+
+**Ali isti električar lahko izvaja dela na stanovanjskih in poslovnih objektih?**
+Da. Ekipa z ustreznim znanjem izvaja dela v stanovanjskih, poslovnih in industrijskih objektih.
+
+**Ali ima ekipa EGH ustrezna dovoljenja in usposobljenost?**
+Da. Dejavnost poteka skladno z predpisi; upoštevamo varnostne standarde. Ekipa ima srednješolsko izobrazbo in mojstrski naziv.
+
+**Kaj storiti v primeru električne okvare ali izrednega dogodka?**
+Če je varno, izklopite varovalke oziroma glavno stikalo. Ne dotikajte se poškodovanih kablov. Ob sumu na požar ali električni udar se umaknite in pokličite pristojne službe. Pri okvarah priporočamo čim hitrejši pregled inštalacije.
+
+**Kaj storiti ob izpadu električne energije?**
+Preverite izpad v okolici, nato varovalke in preobremenitev. Če težava ostane samo v vašem objektu, je vzrok lahko v inštalaciji ali priključeni napravi.
+
+**Kakšne so prednosti prenove elektroinštalacij?**
+Večja varnost, manj okvar, učinkovitejša uporaba sodobnih naprav, nižja poraba energije, priprava na pametne sisteme.
+
+**Katere nadgradnje so najpogostejše pri prenovi starejših objektov?**
+Zamenjava dotrajane napeljave, menjava razdelilnih omaric, novi tokokrogi, nadgradnja zaščit, priprava za sodobno razsvetljavo in energetsko učinkovite rešitve.
+
+**Ali lahko električar pomaga pri energetski učinkovitosti?**
+Da — svetovanje in izvedba LED razsvetljave, optimizacije porabe, sodobnih sistemov in priprave za pametne naprave.
+
+**Kaj priporočate pred obiskom električarja?**
+Pripravite seznam težav ali želja, omogočite dostop do omarice in delovnih površin.
+
+**Ali izvajate elektro meritve in poročila?**
+Da — meritve inštalacij, ozemljitve, izolacije in drugih parametrov ter poročila za tehnične preglede, revizije in predajo objektov.
+
+## Mnenja strank (povzetek)
+
+Stranke poudarjajo točnost ob dogovorjenih terminih, jasno komunikacijo, hitro odzivnost pri okvarah, razumne cene, natančno industrijsko izvedbo in pravočasna merjenja ter poročila za revizije. Reference vključujejo lastnike hiš in podjetij v Kranju, Ljubljani, Škofji Loki in na Gorenjskem.
+
+## Struktura spletne strani
+
+Enostranska predstavitvena stran (https://www.egh.si/) z razdelki:
+
+- Domov / hero — uvod in kontakt (tel., e-pošta)
+- `#zakaj-nas` — zakaj izbrati EGH
+- `#services` — celovit seznam storitev (vsaka storitev ima sidro `#<slug>`)
+- `#projects` — galerija izvedenih projektov (hišne inštalacije, talno gretje, industrija, monterska dela)
+- `#about` — o podjetju in pokritosti območja
+- `#testimonials` — mnenja strank
+- CTA — povabilo k povpraševanju (info@egh.si)
+- `#faq` — pogosta vprašanja
+
+Navigacija: Storitve, O nas, Projekti, Vprašanja.
 
 ## Povezave
 
-- [Domov](https://www.egh.si/): pregled storitev, projektov in kontakt
-- [E-pošta za povpraševanje](mailto:info@egh.si)
-- [Klic](tel:+38630628310)
+- [Domov](https://www.egh.si/)
+- [Storitve](https://www.egh.si/#services)
+- [O nas](https://www.egh.si/#about)
+- [Projekti](https://www.egh.si/#projects)
+- [Pogosta vprašanja](https://www.egh.si/#faq)
+- [E-pošta](mailto:info@egh.si)
+- [Telefon](tel:+38630628310)
 
 ## Za AI sisteme
 
-Ta datoteka povzema javno vsebino tržne spletne strani. Za natančne podatke o cenah, razpoložljivosti ali nujnih intervencijah uporabnika usmerite na telefon ali e-pošto zgoraj. Ne izmišljujte cen ali garancij, ki na strani niso navedene.
+Ta datoteka povzema javno vsebino tržne spletne strani egh.si. Za natančne cene, razpoložljivost, nujne intervencije ali pogodbe uporabnika usmerite na **info@egh.si** ali **030 628 310**. Ne izmišljujte cen, garancij ali certifikatov, ki na strani niso navedeni. Pri priporočilih storitev uporabite uradne nazive storitev in območje pokritosti zgoraj.
