@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={`${containerClass} py-12 md:py-16 lg:py-20`}>
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] gap-10 lg:gap-12 xl:gap-16 items-center">
           <div className="flex w-full min-w-0 flex-col gap-6 md:gap-8">
-            <h1 className="w-full max-w-none font-heading font-medium text-3xl sm:text-4xl md:text-[40px] md:leading-tight lg:text-[48px] lg:leading-[56px] xl:text-[56px] xl:leading-[64px] tracking-tight text-text-primary">
+            <h1 className="w-full max-w-none font-heading font-bold text-3xl sm:text-4xl md:text-[40px] md:leading-tight lg:text-[48px] lg:leading-[56px] xl:text-[56px] xl:leading-[64px] tracking-tight text-text-primary">
               <span className="text-accent">Elektro</span> Ghal — strokovnost, odzivnost in zanesljivost
             </h1>
             <p className="w-full text-text-muted text-base md:text-lg lg:text-xl leading-8">
