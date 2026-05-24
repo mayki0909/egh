@@ -34,7 +34,7 @@ export default function Features() {
             id="features-heading"
             className="font-heading font-bold text-3xl md:text-4xl lg:text-[48px] text-text-primary leading-tight"
           >
-            Zanesljiv partner za <span className="text-accent">eelektroinštalacije</span>, meritve in vzdrževanje
+            Zanesljiv partner za <span className="text-accent">elektroinštalacije</span>, meritve in vzdrževanje
           </h2>
           <p className="text-text-muted-2 text-base md:text-lg leading-8">
             V podjetju Elektro Ghal verjamemo, da dobre elektroinštalacije niso le tehnična
