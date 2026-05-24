@@ -26,9 +26,9 @@ const siteUrl = "https://www.egh.si";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Električar v Kranju, Škofja Loka in okolici | Gal Harbaš",
+  title: "Elektroinštalacije Ghal - Zanesljiv električar na Gorenjskem",
   description:
-    "Gal Harbaš s.p. – industrijske in hišne elektroinštalacije, zamrzovalne komore, priklopi števcev, zasilna razsvetljava, meritve in poročila v Škofji Loki, Kranju in Ljubljani.",
+    "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani.",
   keywords: [
     "električar Kranj",
     "električar Škofja Loka",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Električar v Kranju in okolici | Gal Harbaš",
+    title: "Elektroinštalacije Ghal - Zanesljiv električar na Gorenjskem",
     description:
       "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani.",
     type: "website",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Električar v Kranju, Škofja Loka in okolici | Gal Harbaš",
+    title: "Elektroinštalacije Ghal - Zanesljiv električar na Gorenjskem",
     description:
-      "Vrhunske električarske storitve v Škofji Loki, Kranju in Ljubljani.",
+      "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani.",
     images: ["/metadata.jpeg"],
   },
 };
@@ -82,7 +82,7 @@ export default function RootLayout({
     "@type": "Electrician",
     name: "Elektroinštalacije, Gal Harbaš s.p.",
     description:
-      "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani",
+      "Industrijske in hišne elektroinštalacije, meritve, zasilna razsvetljava in priklopi v Škofji Loki, Kranju in Ljubljani.",
     url: siteUrl,
     telephone: "+38630628310",
     email: "info@egh.si",
@@ -96,7 +96,7 @@ export default function RootLayout({
     areaServed,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Električne storitve",
+      name: "Elektro storitve",
       itemListElement: services.map((service, index) => ({
         "@type": "ListItem",
         position: index + 1,
